@@ -5,7 +5,7 @@
 	
 	<link href="https://miblue119.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://miblue119.github.io"/>
-	<updated>2021-11-17T00:00:00-00:00</updated>
+	<updated>2021-11-18T00:00:00-00:00</updated>
 	<id>https://update-me.com</id>
 	<author>
 		<name>weirenlan</name>
@@ -233,6 +233,134 @@ c. Surround mode: 讓用戶可聽到更多周遭的環境聲&lt;/li&gt;
 &lt;p&gt;修改後就能在&lt;code&gt;&amp;lt;github_username&amp;gt;.github.io&lt;/code&gt;看到架設的靜態blog了！&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>MLOps Resoucres</title>
+		<link href="https://miblue119.github.io/posts/_mlops_resources/"/>
+		<updated>2021-11-18T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_mlops_resources/</id>
+		<content type="html">
+		  &lt;h1 id=&quot;mlops-resoucres&quot;&gt;MLOps Resoucres &lt;a class=&quot;direct-link&quot; href=&quot;#mlops-resoucres&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;How to maintain and start an AI project is not a simple software project.Because it contains the new part like data collection/data processing/find a good way to model the task/evaluate what we train/monitor and optimize the model online.&lt;/p&gt;
+&lt;h2 id=&quot;table-of-contains&quot;&gt;Table of contains &lt;a class=&quot;direct-link&quot; href=&quot;#table-of-contains&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Note-to-lauch-AI-project&quot;&gt;Note-to-lauch-AI-project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Course&quot;&gt;Course&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Tools-of-MLOpes&quot;&gt;Tools-of-MLOpes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Article&quot;&gt;Article&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;note-to-lauch-ai-project&quot;&gt;Note-to-lauch-AI-project &lt;a class=&quot;direct-link&quot; href=&quot;#note-to-lauch-ai-project&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;How to construct a Proof of Concept for an AI project ?&lt;/p&gt;
+&lt;h4 id=&quot;1.-clearly-define-the-purpose-of-the-ai-task&quot;&gt;1. Clearly define the purpose of the AI task &lt;a class=&quot;direct-link&quot; href=&quot;#1.-clearly-define-the-purpose-of-the-ai-task&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is necessary to clarify the background of the problem with the stakeholders, the operating mechanism of the original service and the goals they want to achieve. And can analyze whether there is AI in the middle that can make up the part, and what benefits and costs can be added if necessary.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Confirm important window contacts (with relevant knowledge/can trust), and establish an instant communication channel&lt;/li&gt;
+&lt;li&gt;Effectively record and synchronize project stakeholders&#39; information&lt;/li&gt;
+&lt;li&gt;Able to draw up phased goals&lt;/li&gt;
+&lt;li&gt;Confirm whether the data required for the question is reasonable, what is the method of collecting the data or how to build it&lt;/li&gt;
+&lt;li&gt;Preliminarily clarify the evaluation index (metric) as the question to improve the standard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;2.-data-collection-and-processing&quot;&gt;2. Data collection and processing &lt;a class=&quot;direct-link&quot; href=&quot;#2.-data-collection-and-processing&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Must have a reliable and stable way of receiving data.&lt;/li&gt;
+&lt;li&gt;If you need to mark the data, how to integrate relevant domain knowledge, or if there is relevant information for reference.&lt;/li&gt;
+&lt;li&gt;Check whether the collected information is normal and complete, and whether it meets the requirements of the target task&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ｏthers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assess whether traditional identification methods can be used, and semi-automatic labeling is done first to reduce the cost of manual labeling.&lt;br&gt;
+Ｅxample: Use template matching to assist label the object.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3.-looking-for-methods-related-to-building%3A&quot;&gt;3. Looking for methods related to building: &lt;a class=&quot;direct-link&quot; href=&quot;#3.-looking-for-methods-related-to-building%3A&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Evaluate the appropriate method based on the current data size/type.&lt;/li&gt;
+&lt;li&gt;Try to find existing methods from google, as a baseline reference.&lt;/li&gt;
+&lt;li&gt;From Github to find a package open to use by others, if there is a good method and commercial authorization can be used.&lt;/li&gt;
+&lt;li&gt;Read related papers/curriculums of major U.S. universities/public competition materials.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Resource websites with AI papers and programs in various fields:&lt;a href=&quot;https://paperswithcode.com/&quot;&gt;https://paperswithcode.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kaggle: Data analysis/modeling competition platform, sometimes there will be programs for related topics for reference.&lt;br&gt;
+&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;https://www.kaggle.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;to-do%3A&quot;&gt;To Do: &lt;a class=&quot;direct-link&quot; href=&quot;#to-do%3A&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;How to establish a data/model version control mechanism?&lt;/li&gt;
+&lt;li&gt;How to quickly deploy the environment? Reduce the time to rebuild the environment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;course&quot;&gt;Course &lt;a class=&quot;direct-link&quot; href=&quot;#course&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;1.-cmu-ai-software-engineering-course-resources&quot;&gt;1. CMU AI software engineering course resources &lt;a class=&quot;direct-link&quot; href=&quot;#1.-cmu-ai-software-engineering-course-resources&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Machine learning in Ai production &lt;a href=&quot;https://ckaestne.github.io/seai/&quot;&gt;https://ckaestne.github.io/seai/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineering for Ai-Enabled Systems &lt;a href=&quot;https://ckaestne.github.io/seai/S2020/#course-content&quot;&gt;https://ckaestne.github.io/seai/S2020/#course-content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;tools-of-mlopes&quot;&gt;Tools-of-MLOpes &lt;a class=&quot;direct-link&quot; href=&quot;#tools-of-mlopes&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;developing&quot;&gt;Developing &lt;a class=&quot;direct-link&quot; href=&quot;#developing&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Reviewnb: Notebook Collaboration Tool: &lt;a href=&quot;https://www.reviewnb.com/&quot;&gt;https://www.reviewnb.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;model&quot;&gt;Model &lt;a class=&quot;direct-link&quot; href=&quot;#model&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;MLflow: &lt;a href=&quot;https://mlflow.org/&quot;&gt;https://mlflow.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BentoML: the open source ML model deployment platform &lt;a href=&quot;https://www.bentoml.ai/&quot;&gt;https://www.bentoml.ai/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;monitoring&quot;&gt;Monitoring &lt;a class=&quot;direct-link&quot; href=&quot;#monitoring&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Prometheus: model monitoring: &lt;a href=&quot;https://prometheus.io/&quot;&gt;https://prometheus.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Grafana: Data visualization: &lt;a href=&quot;https://grafana.com/&quot;&gt;https://grafana.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;article&quot;&gt;Article &lt;a class=&quot;direct-link&quot; href=&quot;#article&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;1.-line-publicly-shares-its-own-mlops-process&quot;&gt;1. Line publicly shares its own MLops process &lt;a class=&quot;direct-link&quot; href=&quot;#1.-line-publicly-shares-its-own-mlops-process&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;link:(in traditional chinese) &lt;a href=&quot;https://www.ithome.com.tw/news/141774?fbclid=IwAR2u39v9I5WDDlYJz89gxhgNpFUBajeJKAHtT-fni2g9qA4-blsIfsBOS-s&quot;&gt;https://www.ithome.com.tw/news/141774?fbclid=IwAR2u39v9I5WDDlYJz89gxhgNpFUBajeJKAHtT-fni2g9qA4-blsIfsBOS-s&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A feature store for managing feature data (Feature Store) has been established so that data engineers can input the sorted data into the feature store through a unified interface, and store the feature data in a standardized way. In this way, ML Engineers and data analysts can find the required data through the same interface, eliminating the need for time-consuming data processing, thereby achieving the purpose of reusing characteristic data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integration of model development, the team integrated Jupyter Notebook as a collaborative development tool, and also integrated the open source Jnotebook Reader, so that the developed Notebook can be easily shared among various teams&lt;br&gt;
+&lt;a href=&quot;https://chrome.google.com/webstore/detail/jupyter-notebook-viewer/ocabfdicbcamoonfhalkdojedklfcjmf&quot;&gt;https://chrome.google.com/webstore/detail/jupyter-notebook-viewer/ocabfdicbcamoonfhalkdojedklfcjmf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integrated with Jupyter Notebook&#39;s collaborative work tool ReviewNB, making the work of viewing code smoother.&lt;br&gt;
+&lt;a href=&quot;https://www.reviewnb.com/&quot;&gt;https://www.reviewnb.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The team built a Pipeline Editor tool, which allows ML developers to directly link each step of the pipeline through a visual drag-and-drop setting method: &lt;a href=&quot;https://www.jenkins.io/doc/book/blueocean/pipeline-editor/&quot;&gt;https://www.jenkins.io/doc/book/blueocean/pipeline-editor/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For model training, Line Taiwan also trains models through the NSML platform supported by hundreds of GPUs to meet a large number of computing needs, and monitor the amount of resources used through a visual method; not only that, the NSML platform also provides The AutoML function can save the time required to repeatedly adjust the hyperparameters during the ML training process, aiming at different model versions generated during continuous training&lt;br&gt;
+&lt;a href=&quot;https://ai.nsml.navercorp.com/intro&quot;&gt;https://ai.nsml.navercorp.com/intro&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It also integrates the open source ML platform MLFlow, allowing developers to perform version control and simple analysis and verification in the subsequent model testing phase.&lt;br&gt;
+&lt;a href=&quot;https://mlflow.org/&quot;&gt;https://mlflow.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After the model was verified, the team also used the open source ML model deployment platform BentoML to access the selected model&lt;br&gt;
+&lt;a href=&quot;https://www.bentoml.ai/&quot;&gt;https://www.bentoml.ai/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the monitoring of the effectiveness of the model after launch, the aspects to be monitored include the health of the service itself and whether the model has declined due to changes in the environment. The former can be monitored through Prometheus with Grafana, while the latter needs to be monitored according to the business. Logic to set monitoring indicators, monitor through the BI dashboard, and trigger model retraining according to the degree of model degradation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;model monitoring: &lt;a href=&quot;https://prometheus.io/&quot;&gt;https://prometheus.io/&lt;/a&gt;&lt;br&gt;
+Data visualization: &lt;a href=&quot;https://grafana.com/&quot;&gt;https://grafana.com/&lt;/a&gt;&lt;/p&gt;
 
 			
 		</content>
