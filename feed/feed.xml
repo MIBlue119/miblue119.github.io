@@ -5,46 +5,12 @@
 	
 	<link href="https://update-me.com/feed/feed.xml" rel="self"/>
 	<link href="https://update-me.com"/>
-	<updated>2021-08-19T00:00:00-00:00</updated>
+	<updated>2021-10-20T00:00:00-00:00</updated>
 	<id>https://update-me.com</id>
 	<author>
 		<name>weirenlan</name>
 		<email></email>
 	</author>
-	
-	<entry>
-		<title>This is my third post.</title>
-		<link href="https://update-me.com/posts/thirdpost/"/>
-		<updated>2018-08-24T00:00:00-00:00</updated>
-		<id>https://update-me.com/posts/thirdpost/</id>
-		<content type="html">
-		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;ins class=&quot;highlight-line highlight-line-add&quot;&gt;	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/ins&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;del class=&quot;highlight-line highlight-line-remove&quot;&gt;	counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/del&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-
-			
-		</content>
-	</entry>
-	
-	<entry>
-		<title>This is my fourth post.</title>
-		<link href="https://update-me.com/posts/fourthpost/"/>
-		<updated>2018-09-30T00:00:00-00:00</updated>
-		<id>https://update-me.com/posts/fourthpost/</id>
-		<content type="html">
-		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2020/08/25/11/11/zebra-5516455_1280.jpg&quot; alt=&quot;An image&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-&lt;h2 id=&quot;a-sample-gif&quot;&gt;A sample GIF &lt;a class=&quot;direct-link&quot; href=&quot;#a-sample-gif&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://thumbs.gfycat.com/EqualCreativeCowbird-max-1mb.gif&quot; alt=&quot;A sample GIF&quot;&gt;&lt;/p&gt;
-
-			
-		</content>
-	</entry>
 	
 	<entry>
 		<title>20210512 Bose SoundControl</title>
@@ -107,12 +73,34 @@ Capitalize on low hanging fruit to identify a ballpark value added activity to b
 	</entry>
 	
 	<entry>
-		<title>This is my fifth post.</title>
-		<link href="https://update-me.com/"/>
-		<updated>2021-06-22T00:00:00-00:00</updated>
-		<id>https://update-me.com/</id>
+		<title>20210812 樓氏與AI新創推出AISonic方案平台</title>
+		<link href="https://update-me.com/posts/_knowles_aisonic/"/>
+		<updated>2021-08-12T00:00:00-00:00</updated>
+		<id>https://update-me.com/posts/_knowles_aisonic/</id>
 		<content type="html">
-		  &lt;p&gt;TBD...&lt;/p&gt;
+		  &lt;h2 id=&quot;%5Bnote%5D20210812-%E6%A8%93%E6%B0%8F%E8%88%87ai%E6%96%B0%E5%89%B5%E6%8E%A8%E5%87%BAaisonic%E6%96%B9%E6%A1%88%E5%B9%B3%E5%8F%B0&quot;&gt;[Note]20210812 樓氏與AI新創推出AISonic方案平台 &lt;a class=&quot;direct-link&quot; href=&quot;#%5Bnote%5D20210812-%E6%A8%93%E6%B0%8F%E8%88%87ai%E6%96%B0%E5%89%B5%E6%8E%A8%E5%87%BAaisonic%E6%96%B9%E6%A1%88%E5%B9%B3%E5%8F%B0&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;#新聞分享 #樓氏電子的TWS整合方案&lt;/p&gt;
+&lt;p&gt;先前有留意到一間英國的AI人聲加強新創Chatable([&lt;a href=&quot;https://chatableapps.com/index.php/chatable-hearing-aid/&quot;&gt;https://chatableapps.com/index.php/chatable-hearing-aid/&lt;/a&gt;] 他們推出的人聲增強App 每個月有100分鐘免費額度可使用，下載後可透過手機協助降低環境噪音增強人聲，並可調整兩者Mix的比例。&lt;br&gt;
+他們近期也從軟體跨到了藍芽TWS晶片上，合作廠商是知名的麥克風元件大廠樓氏。Chatable 以提供通透模式下也可以達到人聲增強，目前官網直接以像是Apple airpods pro 般的conversation boost 意境呈現。 &lt;a href=&quot;https://chatable.ai/&quot;&gt;https://chatable.ai/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;樓氏的新聞稿則呈現了他們新推出的TWS整合方案平台，目標鎖定OEM廠商，可以讓TWS藍牙耳機廠商直接使用具備AI功能的平台。&lt;br&gt;
+ 新聞稿：&lt;a href=&quot;https://www.businesswire.com/news/home/20210805005140/en/Knowles-Releases-AI-Enabled-TWS-Development-Kit-with-Premium-Features&quot;&gt;https://www.businesswire.com/news/home/20210805005140/en/Knowles-Releases-AI-Enabled-TWS-Development-Kit-with-Premium-Features&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;樓氏TWS方案平台介紹：[&lt;a href=&quot;https://www.knowles.com/tws-development-platform&quot;&gt;https://www.knowles.com/tws-development-platform&lt;/a&gt;]
+&lt;ul&gt;
+&lt;li&gt;這個方案除了樓氏自身的SiSonicMEMS麥克風外，還整合了多項語音方案，同時樓氏自身的 AISonic™ Audio Edge Processor IA8201 具備NN加速器，以此讓Chatable的AI降噪可達到&amp;lt;6ms的latency(這是頗不簡單的一件事)&lt;/li&gt;
+&lt;li&gt;Sony 的ANC晶片&lt;/li&gt;
+&lt;li&gt;以色列語音算法廠商Alango的音訊方案，提供多麥克風的Beamforming&lt;/li&gt;
+&lt;li&gt;軟體AI新創Chatable的AI人聲加強整合至樓氏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;other&quot;&gt;Other &lt;a class=&quot;direct-link&quot; href=&quot;#other&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AISonic™ Audio Edge Processor IA8201 介紹：&lt;br&gt;
+ &lt;a href=&quot;https://www.knowles.com/docs/default-source/default-document-library/knowles-ia8201-product-brief-final9d761b731dff6ddbb37cff0000940c19.pdf?sfvrsn=4&quot;&gt;https://www.knowles.com/docs/default-source/default-document-library/knowles-ia8201-product-brief-final9d761b731dff6ddbb37cff0000940c19.pdf?sfvrsn=4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chatable Linkedin&lt;br&gt;
+ &lt;a href=&quot;https://www.linkedin.com/company/chatable-ai/?viewAsMember=true&quot;&gt;https://www.linkedin.com/company/chatable-ai/?viewAsMember=true&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 			
 		</content>
@@ -153,6 +141,39 @@ a. Adaptive mode: 自動根據周遭聲音/對話調整&lt;br&gt;
 b. Focus mode: 使用指向性麥克風專注在鄰近的聲源&lt;br&gt;
 c. Surround mode: 讓用戶可聽到更多周遭的環境聲&lt;/li&gt;
 &lt;/ol&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>20211020 FDA推出OTC助聽器規範提案</title>
+		<link href="https://update-me.com/posts/_fda_orc_proposed_rules/"/>
+		<updated>2021-10-20T00:00:00-00:00</updated>
+		<id>https://update-me.com/posts/_fda_orc_proposed_rules/</id>
+		<content type="html">
+		  &lt;p&gt;[Note]20211020 FDA推出OTC助聽器規範提案&lt;/p&gt;
+&lt;p&gt;tags: 產業 #OTC #FDA #hearingaids&lt;/p&gt;
+&lt;h3 id=&quot;%E4%B8%BB%E9%A1%8C%EF%BC%9Afda%E7%B5%82%E6%96%BC%E6%8E%A8%E5%87%BAotc%E5%8A%A9%E8%81%BD%E5%99%A8%E7%9A%84%E8%A6%8F%E7%AF%84%E6%8F%90%E6%A1%88&quot;&gt;主題：FDA終於推出OTC助聽器的規範提案 &lt;a class=&quot;direct-link&quot; href=&quot;#%E4%B8%BB%E9%A1%8C%EF%BC%9Afda%E7%B5%82%E6%96%BC%E6%8E%A8%E5%87%BAotc%E5%8A%A9%E8%81%BD%E5%99%A8%E7%9A%84%E8%A6%8F%E7%AF%84%E6%8F%90%E6%A1%88&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;算是產業的大事件，未來聽損者有機會可以用更親人的價格購買到助聽器。也能預期看到現有消費性電子產品，逐漸將助聽的功能作為基礎要件。&lt;/p&gt;
+&lt;p&gt;FDA news: &lt;a href=&quot;https://www.fda.gov/news-events/press-announcements/fda-issues-landmark-proposal-improve-access-hearing-aid-technology-millions-americans?fbclid=IwAR3rEYaK-GmLluYkRDkxQFeRqLTnWohxmYyIJpChuq3lLG-3E2mVaZXUPuo&quot;&gt;https://www.fda.gov/news-events/press-announcements/fda-issues-landmark-proposal-improve-access-hearing-aid-technology-millions-americans?fbclid=IwAR3rEYaK-GmLluYkRDkxQFeRqLTnWohxmYyIJpChuq3lLG-3E2mVaZXUPuo&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;%E5%89%8D%E6%83%85&quot;&gt;前情 &lt;a class=&quot;direct-link&quot; href=&quot;#%E5%89%8D%E6%83%85&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;拜登3個月前的行政命令希冀FDA盡快推出over the counter(非處方)可購買的規則訂定，以降低目前大廠助聽器的市場壟斷(4大佔了84%)，來讓價格居高不下/頗大負擔的助聽器可以有機會增加市場競爭性來降低價格。&lt;br&gt;
+ 而今天FDA如期推出了規則提案，其中有包含OTC分類的spec要求(latency不能超過15ms/distortion要求/自生成音的最大音量限制/需要提供用戶可以自行調整設定的軟體)&lt;/p&gt;
+&lt;p&gt;先回顧今年相關的新聞&lt;/p&gt;
+&lt;h3 id=&quot;%E7%94%A2%E5%93%81%E7%AB%AF&quot;&gt;產品端 &lt;a class=&quot;direct-link&quot; href=&quot;#%E7%94%A2%E5%93%81%E7%AB%AF&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;202105 助聽器大廠Sonova併購一般消費耳機廠森海賽，結合兩邊(面向助聽以及面向一般消費的品牌通路)的強項&lt;/li&gt;
+&lt;li&gt;202105 一般消費電子品牌Bose 推出第一個FDA認證的助聽器SoundControl (一對$849.95美金)&lt;/li&gt;
+&lt;li&gt;202106 Apple WWDC 推出IOS15 airpods pro 具備Coversation Boost，透過computational audio ＆ beamforming microphone 可以加強人聲&lt;/li&gt;
+&lt;li&gt;202108 具備六大助聽器廠之一Resound的大北歐集團GN hearing，集團旗下面對商務及一般消費性產品的子公司Jabra，推出了俱備輔聽能力的TWS耳機。&lt;/li&gt;
+&lt;li&gt;202108 日本夏普推出真無線藍芽輔聽器MH-L1-B，同時提供遠距調音訂閱制服務&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E4%B8%8A%E6%B8%B8%E7%AB%AF&quot;&gt;上游端 &lt;a class=&quot;direct-link&quot; href=&quot;#%E4%B8%8A%E6%B8%B8%E7%AB%AF&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;202010 IC design house大廠高通跟助聽算法公司Jacoti 合作，旗下QCC514x以及QCC512x藍芽晶片可搭配輔聽方案。&lt;/li&gt;
+&lt;li&gt;202108 麥克風大廠樓氏電子推出結合以色列語音算法廠商Alango/Sony 的ANC晶片/軟體AI新創Chatable的AI人聲加強的TWS平台給OEM廠商&lt;/li&gt;
+&lt;/ul&gt;
 
 			
 		</content>
