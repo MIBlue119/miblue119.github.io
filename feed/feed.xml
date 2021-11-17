@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Weiren&#39;s blog</title>
+	<subtitle>Weiren&#39;s blog</subtitle>
+	
+	<link href="https://update-me.com/feed/feed.xml" rel="self"/>
+	<link href="https://update-me.com"/>
+	<updated>2021-08-19T00:00:00-00:00</updated>
+	<id>https://update-me.com</id>
+	<author>
+		<name>weirenlan</name>
+		<email></email>
+	</author>
+	
+	<entry>
+		<title>This is my third post.</title>
+		<link href="https://update-me.com/posts/thirdpost/"/>
+		<updated>2018-08-24T00:00:00-00:00</updated>
+		<id>https://update-me.com/posts/thirdpost/</id>
+		<content type="html">
+		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;ins class=&quot;highlight-line highlight-line-add&quot;&gt;	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/ins&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;del class=&quot;highlight-line highlight-line-remove&quot;&gt;	counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/del&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>This is my fourth post.</title>
+		<link href="https://update-me.com/posts/fourthpost/"/>
+		<updated>2018-09-30T00:00:00-00:00</updated>
+		<id>https://update-me.com/posts/fourthpost/</id>
+		<content type="html">
+		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2020/08/25/11/11/zebra-5516455_1280.jpg&quot; alt=&quot;An image&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+&lt;h2 id=&quot;a-sample-gif&quot;&gt;A sample GIF &lt;a class=&quot;direct-link&quot; href=&quot;#a-sample-gif&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://thumbs.gfycat.com/EqualCreativeCowbird-max-1mb.gif&quot; alt=&quot;A sample GIF&quot;&gt;&lt;/p&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>20210512 Bose SoundControl</title>
+		<link href="https://update-me.com/posts/_bose_soundcontrol/"/>
+		<updated>2021-05-12T00:00:00-00:00</updated>
+		<id>https://update-me.com/posts/_bose_soundcontrol/</id>
+		<content type="html">
+		  &lt;p&gt;[Note]20210512 Bose推出耳掛式助聽器&lt;/p&gt;
+&lt;p&gt;#產業 #助聽器 #消費電子&lt;/p&gt;
+&lt;p&gt;重磅消息，Bose推出了耳掛式助聽器！ 來了來了！ 消費電子產品跟助聽器的界線模糊已跨過。&lt;br&gt;
+之前Bose推出過頸掛式輔聽器礙於法規最後沒有力推，累積的助聽器算法技術沒有白費，直接跨到做了耳掛式助聽器，而且這次過了FDA。 現在一對只要$849美金，超級有競爭力。&lt;/p&gt;
+&lt;p&gt;- - -詳細的產品介紹 - - - - -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;產品名稱：SoundControl™ Hearing Aids&lt;/li&gt;
+&lt;li&gt;價格：$849.95 美金 /pair&lt;/li&gt;
+&lt;li&gt;關鍵字：first FDA-cleared / direct-to-consumer / can make setting adjustments themselves&lt;/li&gt;
+&lt;li&gt;產品頁：&lt;a href=&quot;https://www.bose.com/en_us/products/headphones/earbuds/soundcontrol-hearing-aids.html#v=soundcontrol_hearing_aids_gray&quot;&gt;https://www.bose.com/en_us/products/headphones/earbuds/soundcontrol-hearing-aids.html#v=soundcontrol_hearing_aids_gray&lt;/a&gt;&lt;br&gt;
+產品鎖定對象：具備輕中度聽損的成人&lt;br&gt;
+初步販售區域： 5/18起美國五州 Massachusetts, Montana, North Carolina, South Carolina, and Texas - with nationwide availability to follow.&lt;br&gt;
+販售策略： - 具備適用期90天 - 可使用醫療儲蓄帳戶 FSA/HSA FDA認證： FDA cleared Class II medical device&lt;br&gt;
+#具備的功能： &lt;br&gt;
+#軟體 - Focus(指向性): &lt;br&gt;
+有兩種模式 Front Mode 以及 Everywhere - Left &amp;amp; Right Balance: 左右耳音量( World Volume)可以各自調整 - Mode Setting: 可以預設好幾種自己喜歡的設定，以快速應對不同場景切換使用&lt;br&gt;
+#硬體&lt;/li&gt;
+&lt;li&gt;具備可調整音量的實體按鍵&lt;br&gt;
+ - 可防水以及日照&lt;br&gt;
+#其他&lt;/li&gt;
+&lt;li&gt;可支援只使用單耳：一開始需要兩耳與手機配對，再透過App調整為只使用單耳。方便單耳聽損用戶。&lt;br&gt;
+ - 初次設定：第一次設定需要透過手機使用Bose Hear App來設定以及調整各個參數&lt;/li&gt;
+&lt;li&gt;收集用戶使用助聽器資料：Bose於產品ＦＡＱ提到當用戶將助聽器與App連接時，會收集用戶如何使用助聽器/App，資料可能涵蓋 &amp;quot;This information includes technical, diagnostic, environmental, and usage data&amp;quot;&lt;br&gt;
+#Bose這款還沒支援的功能&lt;/li&gt;
+&lt;li&gt;還無法直接串流音樂以及接聽電話&lt;/li&gt;
+&lt;li&gt;Own Voice 問題未解： 戴上助聽器後自己的聲音會放大，同時會具備耳塞效應。官方目前針對以下的對策是請用戶使用不同的eartips&lt;br&gt;
+#搭配的App: Boss Hear App 支援Android/IOS : &lt;a href=&quot;http://app.bose.com/SC&quot;&gt;app.Bose.com/SC&lt;/a&gt; - Bose CustomTune : lets you customize your hearing aids with audiologist quality results. The clinically proven technology helps you adjust your hearing parameters within the Bose Hear App using two simple controls: World Volume and Treble &amp;amp; Bass. This technology offers hundreds of options to customize your hearing&lt;/li&gt;
+&lt;li&gt;Boss 附上的Custom tume研究效果：&lt;a href=&quot;https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/soundcontrol_hearing_aids/pdf/hear_study_en.pdf&quot;&gt;https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/soundcontrol_hearing_aids/pdf/hear_study_en.pdf&lt;/a&gt;&lt;br&gt;
+#通訊協議：&lt;/li&gt;
+&lt;li&gt;使用Bluetooth Low Energy：目前主要是用來讓手機能傳輸調整的指令給予助聽器，還沒在這加上音訊以及通話。&lt;/li&gt;
+&lt;li&gt;只能一次連上一台手機：由此猜測還不是可以對多的藍芽5.2 - 對接的手機系統Android與IOS皆可以支援，但BLE協議要4.2版以上&lt;br&gt;
+#硬體資訊： - 使用可替換式的鋅空電池 ，每隻使用4顆 312 zinc-air battery - 續航力若每天使用14小時，可持續使用4天，總共56小時&lt;/li&gt;
+&lt;li&gt;每隻具備2個麥克風 - 具備一個防水/防日照的盒子 - 每隻重量為 3 g #線上購買體驗 ### 具備線上聽測(技術提供者：&lt;a href=&quot;https://www.hearxgroup.com/&quot;&gt;https://www.hearxgroup.com/&lt;/a&gt;) - 會播放人一次念3個英文數字(0~9)，並選取聽到的數字來做聽測，並會有背景噪音&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ## Section Header
+
+&lt;a href=&quot;/posts/firstpost/&quot;&gt;First post&lt;/a&gt;
+&lt;a href=&quot;/posts/thirdpost/&quot;&gt;Third post&lt;/a&gt;
+
+Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+
+Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+
+# Test SVG
+
+![Test Share SVG](/img/share.svg)
+
+# Test Relative Local Image
+
+![Test Share SVG](../../img/doener.jpg) --&gt;
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>This is my fifth post.</title>
+		<link href="https://update-me.com/"/>
+		<updated>2021-06-22T00:00:00-00:00</updated>
+		<id>https://update-me.com/</id>
+		<content type="html">
+		  &lt;p&gt;TBD...&lt;/p&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>20210819 GN hearing Jabra推出輔聽耳機Enhance plus</title>
+		<link href="https://update-me.com/posts/_enhance_plus/"/>
+		<updated>2021-08-19T00:00:00-00:00</updated>
+		<id>https://update-me.com/posts/_enhance_plus/</id>
+		<content type="html">
+		  &lt;h4 id=&quot;%5Bnote%5D20210819-gn-hearing-jabra%E6%8E%A8%E5%87%BA%E8%BC%94%E8%81%BD%E8%80%B3%E6%A9%9Fenhance-plus&quot;&gt;[Note]20210819 GN hearing Jabra推出輔聽耳機Enhance plus &lt;a class=&quot;direct-link&quot; href=&quot;#%5Bnote%5D20210819-gn-hearing-jabra%E6%8E%A8%E5%87%BA%E8%BC%94%E8%81%BD%E8%80%B3%E6%A9%9Fenhance-plus&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;#hearing #tws #otc&lt;/p&gt;
+&lt;p&gt;具備六大助聽器Resound 的GN hearing 旗下面向一般消費性產品的Jabra ，推出了俱備輔聽功能的TWS耳機Enhance plus。&lt;br&gt;
+具備六大助聽器廠之一Resound的大北歐集團GN hearing，集團旗下面對商務及一般消費性產品的子公司Jabra，推出了俱備輔聽能力的TWS耳機。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jabra enhance plus介紹頁面：&lt;a href=&quot;https://www.jabra.com/hearing/enhance-plus&quot;&gt;https://www.jabra.com/hearing/enhance-plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jabra enhance plus youtube 影片：&lt;a href=&quot;https://www.youtube.com/watch?v=6n86BhVn_es&quot;&gt;https://www.youtube.com/watch?v=6n86BhVn_es&lt;/a&gt;&lt;br&gt;
+目前售價還未釋出，首發販賣市場會先在美國，之後再往外擴散&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;充電完具備10小時續航，搭配充電盒可以達到30小&lt;/li&gt;
+&lt;li&gt;可接受音樂及通話串流&lt;/li&gt;
+&lt;li&gt;具備self fitting，用戶搭配Jabra Enhance App可自行調整合適的配置&lt;/li&gt;
+&lt;li&gt;具備IP52防水跟防塵&lt;/li&gt;
+&lt;li&gt;目前釋出訊息為跟Iphone 可搭配&lt;/li&gt;
+&lt;li&gt;GN hearing 在這釋出的輔聽算法涵蓋&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Warp Compressor&lt;/li&gt;
+&lt;li&gt;Digital Noise Reduction&lt;/li&gt;
+&lt;li&gt;Digital Feedback Suppression&lt;/li&gt;
+&lt;li&gt;Binaural Beamformer (with directionality)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;具備三種聆聽模式&lt;br&gt;
+a. Adaptive mode: 自動根據周遭聲音/對話調整&lt;br&gt;
+b. Focus mode: 使用指向性麥克風專注在鄰近的聲源&lt;br&gt;
+c. Surround mode: 讓用戶可聽到更多周遭的環境聲&lt;/li&gt;
+&lt;/ol&gt;
+
+			
+		</content>
+	</entry>
+</feed>
