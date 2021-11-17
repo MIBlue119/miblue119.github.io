@@ -5,7 +5,7 @@
 	
 	<link href="https://miblue119.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://miblue119.github.io"/>
-	<updated>2021-10-20T00:00:00-00:00</updated>
+	<updated>2021-11-17T00:00:00-00:00</updated>
 	<id>https://update-me.com</id>
 	<author>
 		<name>weirenlan</name>
@@ -174,6 +174,65 @@ c. Surround mode: 讓用戶可聽到更多周遭的環境聲&lt;/li&gt;
 &lt;li&gt;202010 IC design house大廠高通跟助聽算法公司Jacoti 合作，旗下QCC514x以及QCC512x藍芽晶片可搭配輔聽方案。&lt;/li&gt;
 &lt;li&gt;202108 麥克風大廠樓氏電子推出結合以色列語音算法廠商Alango/Sony 的ANC晶片/軟體AI新創Chatable的AI人聲加強的TWS平台給OEM廠商&lt;/li&gt;
 &lt;/ul&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Build Your Blog from Eleventy</title>
+		<link href="https://miblue119.github.io/posts/_build_blog_by_eleventy/"/>
+		<updated>2021-11-17T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_build_blog_by_eleventy/</id>
+		<content type="html">
+		  &lt;h2 id=&quot;%5Bnote%5D-build-your-blog-from-eleventy&quot;&gt;[Note] Build Your Blog from Eleventy &lt;a class=&quot;direct-link&quot; href=&quot;#%5Bnote%5D-build-your-blog-from-eleventy&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;假如想要建置一個自己的blog&lt;/li&gt;
+&lt;li&gt;可以方便的使用Markdown語法&lt;/li&gt;
+&lt;li&gt;可以輕鬆的掛載到gihub.io上使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;那可以考慮看看&lt;code&gt;eleventy&lt;/code&gt;這個架站套件，即使不太會前端的技能，也還是能蠻無痛的操作。&lt;br&gt;
+起源是一開始是從前端大神Huli分享一個post，是一個前端工程師分享關於 &lt;a href=&quot;https://jason-memo.dev/posts/why-i-leave-medium-and-build-blog-with-eleventy/&quot;&gt;為什麼我離開 Medium 用 eleventy 做一個 blog&lt;/a&gt;&lt;br&gt;
+其中分享了一個是Google AMP(Accelerated Mobile Page) tech lead所開發的&lt;a href=&quot;https://github.com/google/eleventy-high-performance-blog&quot;&gt;eleventy-high-performance-blog&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;%E6%9E%B6%E7%AB%99%E5%88%B0github.io%E4%B8%8A%E6%AD%A5%E9%A9%9F&quot;&gt;架站到github.io上步驟 &lt;a class=&quot;direct-link&quot; href=&quot;#%E6%9E%B6%E7%AB%99%E5%88%B0github.io%E4%B8%8A%E6%AD%A5%E9%A9%9F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;從Github 上 Fork &lt;a href=&quot;https://github.com/google/eleventy-high-performance-blog&quot;&gt;eleventy-high-performance-blog&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;假如還沒有打算使用付費Github的話，Fork的Repo需要設為Public，假若是Private需要付費才可以設定為Pages。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;將Fork的Repo改名為 &amp;lt;github_username&amp;gt;.github.io 以便後續使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone Repo下來修改些東西&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_data/metadata.json&lt;/code&gt; ： 將其中的預設值改為自己的頁面資料&lt;/li&gt;
+&lt;li&gt;於&lt;code&gt;posts/&lt;/code&gt;資料夾中參考範例Markdown，可新增自己的頁面&lt;/li&gt;
+&lt;li&gt;避免預設的test bench 影響到，可以先把 &lt;code&gt;test/test-generic-post.js&lt;/code&gt;中的註解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;新增Github Action Deploy的設定，透過Github Action來在每次Pull後都會部署新的頁面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;於 &lt;code&gt;.github/workflows/build-and-test.yml&lt;/code&gt;中新增以下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    - name: Deploy&lt;br&gt;      uses: peaceiris/actions-gh-pages@v3&lt;br&gt;      with:&lt;br&gt;        publish_dir: ./_site&lt;br&gt;        github_token: $&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;將新的更改Commit後Push到Repo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;從Github頁面設定Settings/Pages，將Source的select branch選為&lt;code&gt;gh-pages&lt;/code&gt;，資料夾選擇&lt;code&gt;root&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;操作參考：&lt;a href=&quot;https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site&quot;&gt;https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改後就能在&lt;code&gt;&amp;lt;github_username&amp;gt;.github.io&lt;/code&gt;看到架設的靜態blog了！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 
 			
 		</content>
