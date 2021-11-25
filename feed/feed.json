@@ -9,6 +9,12 @@
     "url": ""
   },
   "items": [{
+      "id": "https://miblue119.github.io/posts/_pytorch_pylightening_source/",
+      "url": "https://miblue119.github.io/posts/_pytorch_pylightening_source/",
+      "title": "Pytorch &amp; Pytorch Lightning Resources",
+      "content_html": "<h1 id=\"pytorch-%26-pytorch-lightning-resources\">Pytorch &amp; Pytorch Lightning Resources <a class=\"direct-link\" href=\"#pytorch-%26-pytorch-lightning-resources\">#</a></h1>\n<p>In order to review my knowledge about Pytorch/Pytorch Lightning,<br>\nI start to do some practice and collect some resources.</p>\n<h2 id=\"resources(in-progress)\">Resources(In Progress) <a class=\"direct-link\" href=\"#resources(in-progress)\">#</a></h2>\n<h3 id=\"pytorch\">Pytorch <a class=\"direct-link\" href=\"#pytorch\">#</a></h3>\n<ul>\n<li><a href=\"https://github.com/vahidk/EffectivePyTorch\">https://github.com/vahidk/EffectivePyTorch</a></li>\n<li><a href=\"https://github.com/phlippe/uvadlc_notebooks\">https://github.com/phlippe/uvadlc_notebooks</a></li>\n<li><a href=\"https://pytorch-lightning.readthedocs.io/en/latest/notebooks/course_UvA-DL/01-introduction-to-pytorch.html\">https://pytorch-lightning.readthedocs.io/en/latest/notebooks/course_UvA-DL/01-introduction-to-pytorch.html</a></li>\n</ul>\n<h3 id=\"pytorch-lightning\">Pytorch Lightning <a class=\"direct-link\" href=\"#pytorch-lightning\">#</a></h3>\n<ul>\n<li>lighting-hydra template\n<ul>\n<li><a href=\"https://github.com/ashleve/lightning-hydra-template\">https://github.com/ashleve/lightning-hydra-template</a></li>\n</ul>\n</li>\n</ul>\n",
+      "date_published": "2021-11-26T00:00:00-00:00"
+    },{
       "id": "https://miblue119.github.io/posts/_mlops_resources/",
       "url": "https://miblue119.github.io/posts/_mlops_resources/",
       "title": "MLOps Resoucres",
