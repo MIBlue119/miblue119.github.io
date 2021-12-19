@@ -1,5 +1,5 @@
 ---
-title: "Ohmyzsh" Command Line Highlight Tool
+title: Ohmyzsh Command Line Highlight Tool
 description: This is a post to record a tool for terminal
 date: 2021-12-19
 tags:
@@ -7,7 +7,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-Ohmyzsh is a commandline highlight tool
+## Ohmyzsh is a commandline highlight tool
 https://github.com/ohmyzsh/ohmyzsh
 
 ### Install at Ubuntu
