@@ -9,6 +9,12 @@
     "url": ""
   },
   "items": [{
+      "id": "https://miblue119.github.io/posts/_install_zsh_to_terminal/",
+      "url": "https://miblue119.github.io/posts/_install_zsh_to_terminal/",
+      "title": "Ohmyzsh Command Line Highlight Tool",
+      "content_html": "<h2 id=\"ohmyzsh-is-a-commandline-highlight-tool\">Ohmyzsh is a commandline highlight tool <a class=\"direct-link\" href=\"#ohmyzsh-is-a-commandline-highlight-tool\">#</a></h2>\n<p><a href=\"https://github.com/ohmyzsh/ohmyzsh\">https://github.com/ohmyzsh/ohmyzsh</a></p>\n<h3 id=\"install-at-ubuntu\">Install at Ubuntu <a class=\"direct-link\" href=\"#install-at-ubuntu\">#</a></h3>\n<ol>\n<li>\n<p>Install zsh first</p>\n<pre><code>$ apt-get install zsg \n</code></pre>\n</li>\n<li>\n<p>Clone <code>Ohmyzsh</code></p>\n<pre><code>$ git clone https://github.com/ohmyzsh/ohmyzsh.git\n</code></pre>\n</li>\n<li>\n<p>Install <code>Ohmyzsh</code></p>\n<pre><code>$ cd /ohmyzsh/master/tools/\n$ ./install.sh\n</code></pre>\n</li>\n<li>\n<p>Change the setting</p>\n<pre><code>$ nano ~/.zshrc\nZSH_THEME=&quot;agnoster&quot;\n</code></pre>\n<ul>\n<li>Resolve the encode error\n<ul>\n<li>Mac\n<ul>\n<li><a href=\"https://nicksheng.github.io/2017/06/30/mac-zsh/\">https://nicksheng.github.io/2017/06/30/mac-zsh/</a></li>\n<li><a href=\"https://github.com/ccyongzhi/the-Learned/issues/33\">https://github.com/ccyongzhi/the-Learned/issues/33</a></li>\n</ul>\n</li>\n<li>Ubuntu\n<ul>\n<li><a href=\"https://blog.csdn.net/CoderMannul/article/details/90https://blog.csdn.net/CoderMannul/article/details/90724645724645\">https://blog.csdn.net/CoderMannul/article/details/90https://blog.csdn.net/CoderMannul/article/details/90724645724645</a></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p>Let the zsh opened when terminal is opened<br>\na. Add the <code>zsh</code> to bash<br>\n<code>$ sudo vim ~/.bashrc</code><br>\nb. Add this line<br>\n<code>exec zsh</code></p>\n</li>\n</ol>\n",
+      "date_published": "2021-12-19T00:00:00-00:00"
+    },{
       "id": "https://miblue119.github.io/posts/_pytorch_pylightening_source/",
       "url": "https://miblue119.github.io/posts/_pytorch_pylightening_source/",
       "title": "Pytorch &amp; Pytorch Lightning Resources",

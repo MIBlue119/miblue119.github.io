@@ -5,7 +5,7 @@
 	
 	<link href="https://miblue119.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://miblue119.github.io"/>
-	<updated>2021-11-26T00:00:00-00:00</updated>
+	<updated>2021-12-19T00:00:00-00:00</updated>
 	<id>https://update-me.com</id>
 	<author>
 		<name>weirenlan</name>
@@ -735,6 +735,68 @@ I start to do some practice and collect some resources.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Ohmyzsh Command Line Highlight Tool</title>
+		<link href="https://miblue119.github.io/posts/_install_zsh_to_terminal/"/>
+		<updated>2021-12-19T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_install_zsh_to_terminal/</id>
+		<content type="html">
+		  &lt;h2 id=&quot;ohmyzsh-is-a-commandline-highlight-tool&quot;&gt;Ohmyzsh is a commandline highlight tool &lt;a class=&quot;direct-link&quot; href=&quot;#ohmyzsh-is-a-commandline-highlight-tool&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh&quot;&gt;https://github.com/ohmyzsh/ohmyzsh&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;install-at-ubuntu&quot;&gt;Install at Ubuntu &lt;a class=&quot;direct-link&quot; href=&quot;#install-at-ubuntu&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install zsh first&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ apt-get install zsg 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone &lt;code&gt;Ohmyzsh&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/ohmyzsh/ohmyzsh.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;code&gt;Ohmyzsh&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd /ohmyzsh/master/tools/
+$ ./install.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Change the setting&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ nano ~/.zshrc
+ZSH_THEME=&amp;quot;agnoster&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Resolve the encode error
+&lt;ul&gt;
+&lt;li&gt;Mac
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nicksheng.github.io/2017/06/30/mac-zsh/&quot;&gt;https://nicksheng.github.io/2017/06/30/mac-zsh/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ccyongzhi/the-Learned/issues/33&quot;&gt;https://github.com/ccyongzhi/the-Learned/issues/33&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ubuntu
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/CoderMannul/article/details/90https://blog.csdn.net/CoderMannul/article/details/90724645724645&quot;&gt;https://blog.csdn.net/CoderMannul/article/details/90https://blog.csdn.net/CoderMannul/article/details/90724645724645&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Let the zsh opened when terminal is opened&lt;br&gt;
+a. Add the &lt;code&gt;zsh&lt;/code&gt; to bash&lt;br&gt;
+&lt;code&gt;$ sudo vim ~/.bashrc&lt;/code&gt;&lt;br&gt;
+b. Add this line&lt;br&gt;
+&lt;code&gt;exec zsh&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 
 			
 		</content>
