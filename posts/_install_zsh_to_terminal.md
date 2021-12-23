@@ -13,20 +13,20 @@ https://github.com/ohmyzsh/ohmyzsh
 ### Install at Ubuntu
 
 1. Install zsh first
-    ```
+    ``` bash
     $ apt-get install zsg 
     ```
 2. Clone `Ohmyzsh` 
-    ```
+    ``` bash
     $ git clone https://github.com/ohmyzsh/ohmyzsh.git
     ```
 3. Install `Ohmyzsh`
-    ```
+    ``` bash
     $ cd /ohmyzsh/master/tools/
     $ ./install.sh
     ```
 4. Change the setting
-    ```
+    ``` bash
     $ nano ~/.zshrc
     ZSH_THEME="agnoster"
     ```
@@ -39,10 +39,10 @@ https://github.com/ohmyzsh/ohmyzsh
 
 5. Let the zsh opened when terminal is opened
     a. Add the `zsh` to bash
-        ```
-        $ sudo vim ~/.bashrc
-        ```
+    ``` bash
+    $ sudo vim ~/.bashrc
+    ``` 
     b. Add this line
-        ```
-        exec zsh
-        ```
+    ``` bash
+    exec zsh
+    ```
