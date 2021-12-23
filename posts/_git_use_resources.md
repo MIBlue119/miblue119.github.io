@@ -12,17 +12,17 @@ layout: layouts/post.njk
 
 
 - Check current repo's user info 
-```
+``` bash
 $ git config user.name
 $ git config user.email
 ```
 - Set the current repo's user info with new info 
-```
+``` bash
 $ git config user.name "NEW_NAME"
 $ git config user.email "NEW_EMAIL"
 ```
 
 - Push the repo with other account's github
-```
+``` bash
 $ git push https://user_name:accesstoken@github.com/repos.git
 ```

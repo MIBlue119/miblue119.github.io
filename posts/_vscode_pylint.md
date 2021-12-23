@@ -35,10 +35,12 @@ layout: layouts/post.njk
         1. Construct a folder `.vscode`
         2. New a `setting.json`
         3. Paste these setting 
-        ```
-            {
-            "python.linting.flake8Enabled": true,
-            "python.linting.enabled": true,
-            "python.linting.pydocstyleEnabled": true
-            }
-        ```
+``` json
+
+    {
+        "python.linting.flake8Enabled": true,
+        "python.linting.enabled": true,
+        "python.linting.pydocstyleEnabled": true
+    
+    }
+```

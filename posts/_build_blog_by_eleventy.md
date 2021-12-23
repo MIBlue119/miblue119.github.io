@@ -40,3 +40,29 @@ layout: layouts/post.njk
     - 操作參考：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 7.  修改後就能在`<github_username>.github.io`看到架設的靜態blog了！
 
+## How to rebuild?
+- Install dependency
+```
+$ npm install 
+```
+- Watch the demo page and edit at the same time
+```
+$ npm run watch 
+```
+
+## Resources
+- [The language list support by eleventy](https://prismjs.com/#languages-list)
+    - Example: show the python code at eleventy markdown
+        ``` python 
+    
+        import librosa 
+        
+        class AudioProcessor(Object):
+            """Define the AudioProcessor class.
+            """
+    
+            def __init__(self, input_path: str, output_path: str):
+                self.input_path = input_path
+                self.output_path = output_path
+            
+        ``` 
