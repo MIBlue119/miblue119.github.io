@@ -574,6 +574,26 @@ PDF下載：&lt;a href=&quot;https://drive.google.com/file/d/1WI-IctXuhBl5vqHscD
 &lt;p&gt;修改後就能在&lt;code&gt;&amp;lt;github_username&amp;gt;.github.io&lt;/code&gt;看到架設的靜態blog了！&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&quot;how-to-rebuild%3F&quot;&gt;How to rebuild? &lt;a class=&quot;direct-link&quot; href=&quot;#how-to-rebuild%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install dependency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ npm install 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Watch the demo page and edit at the same time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ npm run watch 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources &lt;a class=&quot;direct-link&quot; href=&quot;#resources&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://prismjs.com/#languages-list&quot;&gt;The language list support by eleventy&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Example: show the python code at eleventy markdown&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;br&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; librosa &lt;br&gt;&lt;br&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AudioProcessor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;Define the AudioProcessor class.&lt;br&gt;    &quot;&quot;&quot;&lt;/span&gt;&lt;br&gt;&lt;br&gt;    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; input_path&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; output_path&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;input_path &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; input_path&lt;br&gt;        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;output_path &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; output_path&lt;br&gt;    &lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 			
 		</content>
@@ -721,20 +741,15 @@ Data visualization: &lt;a href=&quot;https://grafana.com/&quot;&gt;https://graf
 &lt;ul&gt;
 &lt;li&gt;Check current repo&#39;s user info&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;$ git config user.name
-$ git config user.email
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.name&lt;br&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.email&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Set the current repo&#39;s user info with new info&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;$ git config user.name &amp;quot;NEW_NAME&amp;quot;
-$ git config user.email &amp;quot;NEW_EMAIL&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.name &lt;span class=&quot;token string&quot;&gt;&quot;NEW_NAME&quot;&lt;/span&gt;&lt;br&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.email &lt;span class=&quot;token string&quot;&gt;&quot;NEW_EMAIL&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Push the repo with other account&#39;s github&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;$ git push https://user_name:accesstoken@github.com/repos.git
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push https://user_name:accesstoken@github.com/repos.git&lt;/code&gt;&lt;/pre&gt;
 
 			
 		</content>
@@ -883,16 +898,11 @@ b. Add this line&lt;br&gt;
 &lt;li&gt;New a &lt;code&gt;setting.json&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Paste these setting&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;    {
-    &amp;quot;python.linting.flake8Enabled&amp;quot;: true,
-    &amp;quot;python.linting.enabled&amp;quot;: true,
-    &amp;quot;python.linting.pydocstyleEnabled&amp;quot;: true
-    }
-&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;br&gt;    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;        &lt;span class=&quot;token property&quot;&gt;&quot;python.linting.flake8Enabled&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;        &lt;span class=&quot;token property&quot;&gt;&quot;python.linting.enabled&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;        &lt;span class=&quot;token property&quot;&gt;&quot;python.linting.pydocstyleEnabled&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;br&gt;    &lt;br&gt;    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 			
 		</content>
