@@ -9,6 +9,12 @@
     "url": ""
   },
   "items": [{
+      "id": "https://miblue119.github.io/posts/_vscode_pylint/",
+      "url": "https://miblue119.github.io/posts/_vscode_pylint/",
+      "title": "Activate pylint at VS code",
+      "content_html": "<h1 id=\"activate-pylint-at-vs-code\">Activate pylint at VS code <a class=\"direct-link\" href=\"#activate-pylint-at-vs-code\">#</a></h1>\n<h2 id=\"what-is-linting%3F\">What is <code>Linting</code>? <a class=\"direct-link\" href=\"#what-is-linting%3F\">#</a></h2>\n<ul>\n<li>Is a static code analysis tool to flag programming errors, bugs, stylitic errors and suspicious constructs.</li>\n<li>We coud use it to increase the quality of our codes.</li>\n</ul>\n<h2 id=\"lint-tools\">Lint tools <a class=\"direct-link\" href=\"#lint-tools\">#</a></h2>\n<ul>\n<li>Python\n<ul>\n<li><a href=\"https://pylint.org/\">Pylint</a>, <a href=\"https://flake8.pycqa.org/en/latest/\">flake8</a>,<a href=\"http://www.pydocstyle.org/en/stable/\">Pydocstyle</a></li>\n</ul>\n</li>\n<li>Javascript\n<ul>\n<li><a href=\"https://eslint.org/\">ESLint</a></li>\n</ul>\n</li>\n</ul>\n<h2 id=\"how-to-activate-liniting-at-vscode%3F\">How to activate liniting at vscode? <a class=\"direct-link\" href=\"#how-to-activate-liniting-at-vscode%3F\">#</a></h2>\n<ul>\n<li>\n<p>Open <code>Python:Select linter</code></p>\n<ol>\n<li>At Mac, Press <code>cmd+shift+p</code></li>\n<li>Input <code>Python:Select linter</code></li>\n<li>Select part of lint</li>\n</ol>\n</li>\n<li>\n<p><a href=\"https://stackoverflow.com/questions/67229088/how-to-enable-linter-pylint-enable-in-vs-code-when-python-select-linterpylint\">How to open multiple lint in viscode?</a></p>\n<ol>\n<li>At Mac, Press <code>cmd+ ,</code></li>\n<li>Input <code>pylint enabled</code></li>\n<li>Check which pylint you want to enabled</li>\n</ol>\n</li>\n<li>\n<p><a href=\"https://code.visualstudio.com/docs/python/linting\">Python Linting in VScode</a></p>\n<ul>\n<li>You could also new a local setting for vscode\n<ol>\n<li>Construct a folder <code>.vscode</code></li>\n<li>New a <code>setting.json</code></li>\n<li>Paste these setting</li>\n</ol>\n<pre><code>    {\n    &quot;python.linting.flake8Enabled&quot;: true,\n    &quot;python.linting.enabled&quot;: true,\n    &quot;python.linting.pydocstyleEnabled&quot;: true\n    }\n</code></pre>\n</li>\n</ul>\n</li>\n</ul>\n",
+      "date_published": "2021-12-23T00:00:00-00:00"
+    },{
       "id": "https://miblue119.github.io/posts/_install_zsh_to_terminal/",
       "url": "https://miblue119.github.io/posts/_install_zsh_to_terminal/",
       "title": "Ohmyzsh Command Line Highlight Tool",
@@ -19,6 +25,12 @@
       "url": "https://miblue119.github.io/posts/_pytorch_pylightening_source/",
       "title": "Pytorch &amp; Pytorch Lightning Resources",
       "content_html": "<h1 id=\"pytorch-%26-pytorch-lightning-resources\">Pytorch &amp; Pytorch Lightning Resources <a class=\"direct-link\" href=\"#pytorch-%26-pytorch-lightning-resources\">#</a></h1>\n<p>In order to review my knowledge about Pytorch/Pytorch Lightning,<br>\nI start to do some practice and collect some resources.</p>\n<h2 id=\"resources(in-progress)\">Resources(In Progress) <a class=\"direct-link\" href=\"#resources(in-progress)\">#</a></h2>\n<h3 id=\"pytorch\">Pytorch <a class=\"direct-link\" href=\"#pytorch\">#</a></h3>\n<ul>\n<li><a href=\"https://github.com/vahidk/EffectivePyTorch\">https://github.com/vahidk/EffectivePyTorch</a></li>\n<li><a href=\"https://github.com/phlippe/uvadlc_notebooks\">https://github.com/phlippe/uvadlc_notebooks</a></li>\n<li><a href=\"https://pytorch-lightning.readthedocs.io/en/latest/notebooks/course_UvA-DL/01-introduction-to-pytorch.html\">https://pytorch-lightning.readthedocs.io/en/latest/notebooks/course_UvA-DL/01-introduction-to-pytorch.html</a></li>\n</ul>\n<h3 id=\"pytorch-lightning\">Pytorch Lightning <a class=\"direct-link\" href=\"#pytorch-lightning\">#</a></h3>\n<ul>\n<li>lighting-hydra template\n<ul>\n<li><a href=\"https://github.com/ashleve/lightning-hydra-template\">https://github.com/ashleve/lightning-hydra-template</a></li>\n</ul>\n</li>\n</ul>\n",
+      "date_published": "2021-11-26T00:00:00-00:00"
+    },{
+      "id": "https://miblue119.github.io/posts/_git_use_resources/",
+      "url": "https://miblue119.github.io/posts/_git_use_resources/",
+      "title": "Git Github use resources",
+      "content_html": "<h1 id=\"git-github-use-resources\">Git Github use resources <a class=\"direct-link\" href=\"#git-github-use-resources\">#</a></h1>\n<ul>\n<li>Check current repo's user info</li>\n</ul>\n<pre><code>$ git config user.name\n$ git config user.email\n</code></pre>\n<ul>\n<li>Set the current repo's user info with new info</li>\n</ul>\n<pre><code>$ git config user.name &quot;NEW_NAME&quot;\n$ git config user.email &quot;NEW_EMAIL&quot;\n</code></pre>\n<ul>\n<li>Push the repo with other account's github</li>\n</ul>\n<pre><code>$ git push https://user_name:accesstoken@github.com/repos.git\n</code></pre>\n",
       "date_published": "2021-11-26T00:00:00-00:00"
     },{
       "id": "https://miblue119.github.io/posts/_mlops_resources/",

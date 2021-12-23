@@ -5,7 +5,7 @@
 	
 	<link href="https://miblue119.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://miblue119.github.io"/>
-	<updated>2021-12-19T00:00:00-00:00</updated>
+	<updated>2021-12-23T00:00:00-00:00</updated>
 	<id>https://update-me.com</id>
 	<author>
 		<name>weirenlan</name>
@@ -712,6 +712,35 @@ Data visualization: &lt;a href=&quot;https://grafana.com/&quot;&gt;https://graf
 	</entry>
 	
 	<entry>
+		<title>Git Github use resources</title>
+		<link href="https://miblue119.github.io/posts/_git_use_resources/"/>
+		<updated>2021-11-26T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_git_use_resources/</id>
+		<content type="html">
+		  &lt;h1 id=&quot;git-github-use-resources&quot;&gt;Git Github use resources &lt;a class=&quot;direct-link&quot; href=&quot;#git-github-use-resources&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Check current repo&#39;s user info&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ git config user.name
+$ git config user.email
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Set the current repo&#39;s user info with new info&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ git config user.name &amp;quot;NEW_NAME&amp;quot;
+$ git config user.email &amp;quot;NEW_EMAIL&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Push the repo with other account&#39;s github&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ git push https://user_name:accesstoken@github.com/repos.git
+&lt;/code&gt;&lt;/pre&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
 		<title>Pytorch &amp; Pytorch Lightning Resources</title>
 		<link href="https://miblue119.github.io/posts/_pytorch_pylightening_source/"/>
 		<updated>2021-11-26T00:00:00-00:00</updated>
@@ -797,6 +826,73 @@ b. Add this line&lt;br&gt;
 &lt;code&gt;exec zsh&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Activate pylint at VS code</title>
+		<link href="https://miblue119.github.io/posts/_vscode_pylint/"/>
+		<updated>2021-12-23T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_vscode_pylint/</id>
+		<content type="html">
+		  &lt;h1 id=&quot;activate-pylint-at-vs-code&quot;&gt;Activate pylint at VS code &lt;a class=&quot;direct-link&quot; href=&quot;#activate-pylint-at-vs-code&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;what-is-linting%3F&quot;&gt;What is &lt;code&gt;Linting&lt;/code&gt;? &lt;a class=&quot;direct-link&quot; href=&quot;#what-is-linting%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Is a static code analysis tool to flag programming errors, bugs, stylitic errors and suspicious constructs.&lt;/li&gt;
+&lt;li&gt;We coud use it to increase the quality of our codes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;lint-tools&quot;&gt;Lint tools &lt;a class=&quot;direct-link&quot; href=&quot;#lint-tools&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pylint.org/&quot;&gt;Pylint&lt;/a&gt;, &lt;a href=&quot;https://flake8.pycqa.org/en/latest/&quot;&gt;flake8&lt;/a&gt;,&lt;a href=&quot;http://www.pydocstyle.org/en/stable/&quot;&gt;Pydocstyle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Javascript
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://eslint.org/&quot;&gt;ESLint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-to-activate-liniting-at-vscode%3F&quot;&gt;How to activate liniting at vscode? &lt;a class=&quot;direct-link&quot; href=&quot;#how-to-activate-liniting-at-vscode%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open &lt;code&gt;Python:Select linter&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;At Mac, Press &lt;code&gt;cmd+shift+p&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Input &lt;code&gt;Python:Select linter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Select part of lint&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/67229088/how-to-enable-linter-pylint-enable-in-vs-code-when-python-select-linterpylint&quot;&gt;How to open multiple lint in viscode?&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;At Mac, Press &lt;code&gt;cmd+ ,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Input &lt;code&gt;pylint enabled&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Check which pylint you want to enabled&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/docs/python/linting&quot;&gt;Python Linting in VScode&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You could also new a local setting for vscode
+&lt;ol&gt;
+&lt;li&gt;Construct a folder &lt;code&gt;.vscode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;New a &lt;code&gt;setting.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Paste these setting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;    {
+    &amp;quot;python.linting.flake8Enabled&amp;quot;: true,
+    &amp;quot;python.linting.enabled&amp;quot;: true,
+    &amp;quot;python.linting.pydocstyleEnabled&amp;quot;: true
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 			
 		</content>
