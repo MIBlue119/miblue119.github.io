@@ -747,7 +747,19 @@ Data visualization: &lt;a href=&quot;https://grafana.com/&quot;&gt;https://graf
 &lt;/ul&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.name &lt;span class=&quot;token string&quot;&gt;&quot;NEW_NAME&quot;&lt;/span&gt;&lt;br&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.email &lt;span class=&quot;token string&quot;&gt;&quot;NEW_EMAIL&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Push the repo with other account&#39;s github&lt;/li&gt;
+&lt;li&gt;Set the repo&#39;s past commit with new user&amp;amp;email&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; filter-branch -f --env-filter &lt;span class=&quot;token string&quot;&gt;&quot;GIT_AUTHOR_NAME=&#39;MIBlue119&#39;; GIT_AUTHOR_EMAIL=&#39;miblue119@gmail.com&#39;; GIT_COMMITTER_NAME=&#39;MIBlue119&#39;; GIT_COMMITTER_EMAIL=&#39;miblue119@gmail.com&#39;;&quot;&lt;/span&gt; HEAD&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ref:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi&quot;&gt;How to revise the author/email of past commit ?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push the repo with other account&#39;s github&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push https://user_name:accesstoken@github.com/repos.git&lt;/code&gt;&lt;/pre&gt;
 
