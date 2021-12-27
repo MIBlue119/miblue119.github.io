@@ -21,6 +21,12 @@ $ git config user.email
 $ git config user.name "NEW_NAME"
 $ git config user.email "NEW_EMAIL"
 ```
+- Set the repo's past commit with new user&email
+``` bash
+$ git filter-branch -f --env-filter "GIT_AUTHOR_NAME='MIBlue119'; GIT_AUTHOR_EMAIL='miblue119@gmail.com'; GIT_COMMITTER_NAME='MIBlue119'; GIT_COMMITTER_EMAIL='miblue119@gmail.com';" HEAD
+```
+  - Ref: 
+    - [How to revise the author/email of past commit ?](https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi)
 
 - Push the repo with other account's github
 ``` bash
