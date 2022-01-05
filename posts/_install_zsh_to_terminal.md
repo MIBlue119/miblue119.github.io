@@ -14,7 +14,7 @@ https://github.com/ohmyzsh/ohmyzsh
 
 1. Install zsh first
     ``` bash
-    $ apt-get install zsg 
+    $ apt-get install zsh 
     ```
 2. Clone `Ohmyzsh` 
     ``` bash
