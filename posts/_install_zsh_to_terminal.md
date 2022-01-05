@@ -22,7 +22,7 @@ https://github.com/ohmyzsh/ohmyzsh
     ```
 3. Install `Ohmyzsh`
     ``` bash
-    $ cd /ohmyzsh/master/tools/
+    $ cd /ohmyzsh/tools/
     $ ./install.sh
     ```
 4. Change the setting
