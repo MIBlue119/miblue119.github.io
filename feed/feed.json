@@ -11,9 +11,9 @@
   "items": [{
       "id": "https://miblue119.github.io/posts/_change_to_use_iterm2/",
       "url": "https://miblue119.github.io/posts/_change_to_use_iterm2/",
-      "title": "",
-      "content_html": "",
-      "date_published": "2022-02-19T00:31:13.616-00:00"
+      "title": "Change to use Iterm2",
+      "content_html": "<h1 id=\"change-to-use-iterm2\">Change to use Iterm2 <a class=\"direct-link\" href=\"#change-to-use-iterm2\">#</a></h1>\n<h2 id=\"what-is-iterm2%3F\">What is <code>Iterm2</code>? <a class=\"direct-link\" href=\"#what-is-iterm2%3F\">#</a></h2>\n<ul>\n<li><a href=\"https://iterm2.com/\">https://iterm2.com/</a></li>\n<li>A replacement for Terminal. It works on Mac with macOS 10.4 up.</li>\n</ul>\n<h2 id=\"change-the-zsh-theme\">Change the zsh theme <a class=\"direct-link\" href=\"#change-the-zsh-theme\">#</a></h2>\n<ul>\n<li><a href=\"https://pjchender.blogspot.com/2017/02/mac-terminal-iterm-2-oh-my-zsh.html\">https://pjchender.blogspot.com/2017/02/mac-terminal-iterm-2-oh-my-zsh.html</a>\n<ul>\n<li>download iterm2 theme: <a href=\"https://iterm2colorschemes.com/\">https://iterm2colorschemes.com/</a></li>\n<li>import it</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"other-plugin-for-zsh\">Other plugin for zsh <a class=\"direct-link\" href=\"#other-plugin-for-zsh\">#</a></h2>\n<h3 id=\"git-open\">git open <a class=\"direct-link\" href=\"#git-open\">#</a></h3>\n<p>&quot;git-open with oh-my-zsh<br>\n如果常使用 git 的話，一般當我們 commit 並 push 完之後，蠻常會到該 repository 的 github 或 gitlab 去發 Pull Request，這時候可以使用 git-open 這個工具，未來只需要在 Terminal 中輸入 $ git open 即可到該 git repository 對應的網站。&quot;</p>\n",
+      "date_published": "2022-02-19T00:00:00-00:00"
     },{
       "id": "https://miblue119.github.io/posts/_vscode_pylint/",
       "url": "https://miblue119.github.io/posts/_vscode_pylint/",
