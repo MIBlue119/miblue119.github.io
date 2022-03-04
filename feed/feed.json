@@ -9,6 +9,12 @@
     "url": ""
   },
   "items": [{
+      "id": "https://miblue119.github.io/posts/_dsp_concepts/",
+      "url": "https://miblue119.github.io/posts/_dsp_concepts/",
+      "title": "DSP Concepts Lauches TWS Toolkit",
+      "content_html": "<h1 id=\"dsp-concepts-launches-tws-toolkit\">DSP Concepts Launches TWS Toolkit <a class=\"direct-link\" href=\"#dsp-concepts-launches-tws-toolkit\">#</a></h1>\n<p><a href=\"https://www.businesswire.com/news/home/20220303005308/en/DSP-Concepts-Launches-TWS-Toolkit-Powered-by-Audio-Weaver\">https://www.businesswire.com/news/home/20220303005308/en/DSP-Concepts-Launches-TWS-Toolkit-Powered-by-Audio-Weaver</a></p>\n<p>聯發科也有投資的一間音訊算法軟體開發平台DSP Concepts 宣告了他也將提供一個關於TWS耳機的開發工具。</p>\n<h2 id=\"%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A\">相關資訊 <a class=\"direct-link\" href=\"#%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A\">#</a></h2>\n<ul>\n<li>Run on the Cadence Tensilica HiFi 5 DSP</li>\n<li>與Airoha合作</li>\n<li>第三方算法廠商包括\n<ul>\n<li>提供個人化聽力算法的 <a href=\"https://www.mimi.io/\">Mimi hearing</a></li>\n<li>提供3D空間音效的 <a href=\"https://visisonics.com/\">VisiSonics</a></li>\n</ul>\n</li>\n</ul>\n<h2 id=\"%E5%83%B9%E5%80%BC\">價值 <a class=\"direct-link\" href=\"#%E5%83%B9%E5%80%BC\">#</a></h2>\n<ul>\n<li>提供內建的音訊處理blocks，以及來自第三方合作廠商的符合產品等級的算法。</li>\n<li>減少OEM廠商開發音訊產品的風險以及複雜度。</li>\n</ul>\n",
+      "date_published": "2022-03-04T00:00:00-00:00"
+    },{
       "id": "https://miblue119.github.io/posts/_change_to_use_iterm2/",
       "url": "https://miblue119.github.io/posts/_change_to_use_iterm2/",
       "title": "Change to use Iterm2",
