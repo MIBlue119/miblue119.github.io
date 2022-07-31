@@ -975,6 +975,217 @@ a. Add the &lt;code&gt;zsh&lt;/code&gt; to bash&lt;/p&gt;
 	</entry>
 	
 	<entry>
+		<title>Building RISC-V AI/ML Solutions</title>
+		<link href="https://miblue119.github.io/posts/_coscup_2022_risc_v_ai_ml/"/>
+		<updated>2022-07-30T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_coscup_2022_risc_v_ai_ml/</id>
+		<content type="html">
+		  &lt;h1 id=&quot;building-risc-v-ai%2Fml-solutions&quot;&gt;Building RISC-V AI/ML Solutions &lt;a class=&quot;direct-link&quot; href=&quot;#building-risc-v-ai%2Fml-solutions&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This my first to attend COSCUP and this is my note about the talks from SiFive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speaker&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hong-Rong Hsu
+&lt;ul&gt;
+&lt;li&gt;SiFive technical Head&lt;/li&gt;
+&lt;li&gt;AI runtime/system software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;intro-of-sifive&quot;&gt;Intro of SiFive &lt;a class=&quot;direct-link&quot; href=&quot;#intro-of-sifive&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;From Risc-V inventors&lt;/li&gt;
+&lt;li&gt;From 2015, july23&lt;/li&gt;
+&lt;li&gt;食譜的發明者兼廚師&lt;/li&gt;
+&lt;li&gt;全球1000個員工&lt;/li&gt;
+&lt;li&gt;市值2.5Billion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;before-we-start&quot;&gt;Before we start &lt;a class=&quot;direct-link&quot; href=&quot;#before-we-start&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Risc-V is the trend
+&lt;ul&gt;
+&lt;li&gt;預估到 2025有62.4 billion的risc-v需求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AI/ML is the trend&lt;/li&gt;
+&lt;li&gt;Every domain needs CPU
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Our Risc-V CPU can satisfy your AI requirement w/o attaching other GPU/DLA&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;DLA: Deep Learning Accerlators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;sifive-risc-v-product-families&quot;&gt;SiFIve Risc-V Product Families &lt;a class=&quot;direct-link&quot; href=&quot;#sifive-risc-v-product-families&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sifive Intellengence: &lt;a href=&quot;https://www.sifive.com/cores/intelligence&quot;&gt;https://www.sifive.com/cores/intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sifive-intellengence-x280-processor&quot;&gt;Sifive Intellengence X280 Processor &lt;a class=&quot;direct-link&quot; href=&quot;#sifive-intellengence-x280-processor&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vector Processing for AI/ML workloads
+&lt;ul&gt;
+&lt;li&gt;seems like arm&#39;s SIMD but more flexible&lt;/li&gt;
+&lt;li&gt;512-bit vector length extension with RISC-V Vectors(RVV) 1.0&lt;/li&gt;
+&lt;li&gt;Sifive Intellengence Extensions, custom instructions that accerlerate AI/ML performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sifive-intellengence-extensions-accelerate-ai-computation&quot;&gt;Sifive Intellengence Extensions accelerate AI Computation &lt;a class=&quot;direct-link&quot; href=&quot;#sifive-intellengence-extensions-accelerate-ai-computation&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;sifive-intellengence%3A-designed-for-evolving-ai-needs&quot;&gt;Sifive Intellengence: Designed for evolving AI needs &lt;a class=&quot;direct-link&quot; href=&quot;#sifive-intellengence%3A-designed-for-evolving-ai-needs&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;若過了幾年有新的算法，已經設計好的DLA是無法支援的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for softmax, TopK, etc&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;提供的粒度是比較細的，提供linear/non-linear的function可以使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Programmability is the key, we provide it&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RVV intrinsic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-about-software%3F&quot;&gt;How about Software? &lt;a class=&quot;direct-link&quot; href=&quot;#how-about-software%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;tensorflowlite%2B-nn-library&quot;&gt;TensorflowLite+ NN library &lt;a class=&quot;direct-link&quot; href=&quot;#tensorflowlite%2B-nn-library&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;TFLite is a simple and quick deployment runtime&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dispatch op to Sifive NN library&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;optimized by RVV intinsic and extended instructions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Performance&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MobileBERT-int8(NLP) achieve ? 3FPS @1G x280-dual cores&lt;/li&gt;
+&lt;li&gt;MobileNetV3-unint8(Classification) achieve &amp;gt; 70FPS @1G&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;the-limits-of-tflite&quot;&gt;The limits of TFLite &lt;a class=&quot;direct-link&quot; href=&quot;#the-limits-of-tflite&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Pros&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easy to deploy. Time to market&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cons&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bad parallelism&lt;/li&gt;
+&lt;li&gt;Graph optimization limitation. We want the best perfromance on SiFIve Platform
+&lt;ul&gt;
+&lt;li&gt;一個單純的interperter，無法做到op fusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Only support TF/TFlite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;what-is-the-something-great%3F&quot;&gt;What is the something Great? &lt;a class=&quot;direct-link&quot; href=&quot;#what-is-the-something-great%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Interpreter is not enough, we need:
+&lt;ul&gt;
+&lt;li&gt;Compiler: More optimization &amp;amp; code-gen automatically 不用再手刻&lt;/li&gt;
+&lt;li&gt;Runtime: Execute Efficiently&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;recommendation-software&quot;&gt;Recommendation Software &lt;a class=&quot;direct-link&quot; href=&quot;#recommendation-software&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MLIR&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Multi-Level Intermediate Representation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mainly solve 2 problems&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Significantly reduce the cost of buliding domain specific compilers&lt;/li&gt;
+&lt;li&gt;Software segmentation: 解決太多廠商重複造輪子(AI compiler)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如何讓更多廠商進來協作？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MLIR Dialects(方言)
+&lt;ul&gt;
+&lt;li&gt;可以讓多種IR放進來&lt;/li&gt;
+&lt;li&gt;提供run trip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是透過LLVM去做code gen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IREE&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/iree-org/iree&quot;&gt;https://github.com/iree-org/iree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;接下來想推在Risc-V上的&lt;/li&gt;
+&lt;li&gt;from Google&lt;/li&gt;
+&lt;li&gt;MLIR的其中一個User&lt;/li&gt;
+&lt;li&gt;目前Sifive跟Google cowork去打開risc-V上的使用&lt;/li&gt;
+&lt;li&gt;AI compiler and runtime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IREE RVV code-gen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;End to End flow
+&lt;ul&gt;
+&lt;li&gt;TFlite-&amp;gt; TOSA MLIR -&amp;gt; Linalg -&amp;gt; Vector +scf -&amp;gt; LLVM IR -&amp;gt;RVV&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perforamce of IREE&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IREE vs TFLite
+&lt;ul&gt;
+&lt;li&gt;mobileBERT-f32: IREE +70% than TFLite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary &lt;a class=&quot;direct-link&quot; href=&quot;#summary&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;HW: SiFive intellengence Provide not only computation but also programmablity&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SW&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TFlite&lt;/li&gt;
+&lt;li&gt;IREE&lt;/li&gt;
+&lt;li&gt;提供 QEMU 來模擬&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
 		<title>設計精簡又快速的 RISC-V 指令集模擬器 - Lambert Wu</title>
 		<link href="https://miblue119.github.io/posts/_coscup_2022_risc_v_instruct_emulator/"/>
 		<updated>2022-07-30T00:00:00-00:00</updated>
@@ -982,6 +1193,9 @@ a. Add the &lt;code&gt;zsh&lt;/code&gt; to bash&lt;/p&gt;
 		<content type="html">
 		  &lt;h1 id=&quot;%E8%A8%AD%E8%A8%88%E7%B2%BE%E7%B0%A1%E5%8F%88%E5%BF%AB%E9%80%9F%E7%9A%84-risc-v-%E6%8C%87%E4%BB%A4%E9%9B%86%E6%A8%A1%E6%93%AC%E5%99%A8---lambert-wu&quot;&gt;設計精簡又快速的 RISC-V 指令集模擬器 - Lambert Wu &lt;a class=&quot;direct-link&quot; href=&quot;#%E8%A8%AD%E8%A8%88%E7%B2%BE%E7%B0%A1%E5%8F%88%E5%BF%AB%E9%80%9F%E7%9A%84-risc-v-%E6%8C%87%E4%BB%A4%E9%9B%86%E6%A8%A1%E6%93%AC%E5%99%A8---lambert-wu&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This my first to attend COSCUP and this is my note about the talks from SiFive.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Speaker&lt;/p&gt;
 &lt;ul&gt;
