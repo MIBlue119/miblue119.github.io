@@ -1509,4 +1509,153 @@ for ()
 			
 		</content>
 	</entry>
+	
+	<entry>
+		<title>The Effective Engineer</title>
+		<link href="https://miblue119.github.io/posts/_note_of_effective_engineer/"/>
+		<updated>2022-07-30T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_note_of_effective_engineer/</id>
+		<content type="html">
+		  &lt;p&gt;&lt;strong&gt;The Effective Engineer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BnIz7H5ruy0&quot;&gt;https://www.youtube.com/watch?v=BnIz7H5ruy0&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/rondy/af1dee1d28c02e9a225ae55da2674a6f&quot;&gt;https://gist.github.com/rondy/af1dee1d28c02e9a225ae55da2674a6f&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Leverage = impact / our investment time&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;How Jeff Dean provide his impact larger than other peoples?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Optimize for learning&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Learning is exponential&lt;/li&gt;
+&lt;li&gt;Investment at early&lt;/li&gt;
+&lt;li&gt;Improve your self at a day&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Own your story
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Find opportunities to really invest in yourself&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How might your self improve at a single day?
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Making a habit out of that&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Invest in iteration speed&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How quickly you could get things done&lt;/li&gt;
+&lt;li&gt;Investing in tools
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Successful people wrote some tools to automate their works&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tools to do monitoring, tools to make debugging easier, tools to glue the system together&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;1 min saved x 10 times / day x engineers&lt;/li&gt;
+&lt;li&gt;Automation deploy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;“If you have to do something manually more than twice, then write a tool for the third time.”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Make the huge difference in the long run in how productive and effective you are&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frequently ask your self&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What are the events or the bottlenecks that you face during development?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How might you shorten a debugging workflow?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Another important question to think about how to get the right things done quickly?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Validate your ideas aggressively &amp;amp; iteratively&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Validate each assumptions with much less work
+&lt;ul&gt;
+&lt;li&gt;Break down our project into a number of different testable assumptions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What is the smallest version of the product that takes the least amount of effort to build&lt;br&gt;
+that you can show to real users and get feedback and validation that what you’re building
+&lt;ul&gt;
+&lt;li&gt;Is actually the right thing to do?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is the scariest part of this project?&lt;br&gt;
+That’s the part with the most unknowns and&lt;br&gt;
+the most risk. Do that part first @Square&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;How might you decompose your project into smaller testable hypotheses?
+&lt;ul&gt;
+&lt;li&gt;Can you use an inexpensive test to validate that what you ‘re doing is the right thing?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How might you expend your 10% of your effort upfront to validate that your project will work?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Minimize operational burden&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2012 IG with 40M users but only 13 employess(5 engineers)
+&lt;ul&gt;
+&lt;li&gt;Do the simple thing first&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What’s the most valuable lesson you’ve learned in the past year?&lt;/li&gt;
+&lt;li&gt;Beware the hidden costs of complexity
+&lt;ul&gt;
+&lt;li&gt;Code complexity&lt;/li&gt;
+&lt;li&gt;System complexity&lt;/li&gt;
+&lt;li&gt;Product complexity&lt;/li&gt;
+&lt;li&gt;Organizational complexity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What is the simplest solution to this problem?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Build a great engineering culture&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What’s one thing you like and one thing you dislike about the engineering culture at your previous company?
+&lt;ul&gt;
+&lt;li&gt;Engineers like to work in environments that focus on high-leverage activities&lt;/li&gt;
+&lt;li&gt;Where there’s a chance to focus on and optimize on learning&lt;/li&gt;
+&lt;li&gt;Want to work a place that everyones is very productive and there’s good tooling and good iteration speed&lt;/li&gt;
+&lt;li&gt;Want to work a places where products aren’t going to waste because assumptions and hypotheses weren’t being tested earlier on&lt;/li&gt;
+&lt;li&gt;Want to build new features as opposed to just maintain and pay off taxes for old existing ones&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;What high-leverage activity can you start working on?
+&lt;ul&gt;
+&lt;li&gt;How can you invest in your own learning and in your own growth to really sort of further your own career&lt;/li&gt;
+&lt;li&gt;You can think about what tools can you build or work flows can you improve for both yourself and for your team to really improve your iteration speed&lt;/li&gt;
+&lt;li&gt;Whether a multimonth project that we are working
+&lt;ul&gt;
+&lt;li&gt;Are there ways that you can break it down into testable hypotheses that you can validate to make sure you’re actually building the right thing for customers for users or other members of the team&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;something seems a little bit too complex
+&lt;ul&gt;
+&lt;li&gt;is there a way to actually make it simpler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;how could we change the culture to let new engineer more quickly in?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+			
+		</content>
+	</entry>
 </feed>
