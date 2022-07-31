@@ -8,9 +8,7 @@ layout: layouts/post.njk
 ---
 
 # Building RISC-V AI/ML Solutions
-
 - This my first to attend COSCUP and this is my note about the talks from SiFive.
-
 - Speaker
     - Hong-Rong Hsu
         - SiFive technical Head
