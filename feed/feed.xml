@@ -5,7 +5,7 @@
 	
 	<link href="https://miblue119.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://miblue119.github.io"/>
-	<updated>2022-03-04T00:00:00-00:00</updated>
+	<updated>2022-07-30T00:00:00-00:00</updated>
 	<id>https://update-me.com</id>
 	<author>
 		<name>weirenlan</name>
@@ -968,6 +968,333 @@ a. Add the &lt;code&gt;zsh&lt;/code&gt; to bash&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;提供內建的音訊處理blocks，以及來自第三方合作廠商的符合產品等級的算法。&lt;/li&gt;
 &lt;li&gt;減少OEM廠商開發音訊產品的風險以及複雜度。&lt;/li&gt;
+&lt;/ul&gt;
+
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>設計精簡又快速的 RISC-V 指令集模擬器 - Lambert Wu</title>
+		<link href="https://miblue119.github.io/posts/_coscup_2022_risc_v_instruct_emulator/"/>
+		<updated>2022-07-30T00:00:00-00:00</updated>
+		<id>https://miblue119.github.io/posts/_coscup_2022_risc_v_instruct_emulator/</id>
+		<content type="html">
+		  &lt;h1 id=&quot;%E8%A8%AD%E8%A8%88%E7%B2%BE%E7%B0%A1%E5%8F%88%E5%BF%AB%E9%80%9F%E7%9A%84-risc-v-%E6%8C%87%E4%BB%A4%E9%9B%86%E6%A8%A1%E6%93%AC%E5%99%A8---lambert-wu&quot;&gt;設計精簡又快速的 RISC-V 指令集模擬器 - Lambert Wu &lt;a class=&quot;direct-link&quot; href=&quot;#%E8%A8%AD%E8%A8%88%E7%B2%BE%E7%B0%A1%E5%8F%88%E5%BF%AB%E9%80%9F%E7%9A%84-risc-v-%E6%8C%87%E4%BB%A4%E9%9B%86%E6%A8%A1%E6%93%AC%E5%99%A8---lambert-wu&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Speaker&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kito Cheng&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kito-cheng&quot;&gt;https://github.com/kito-cheng&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brief&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to use&lt;/li&gt;
+&lt;li&gt;How to write&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What topics are covered today?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;assembly&lt;/li&gt;
+&lt;li&gt;compiler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;what-is-risc-v%3F&quot;&gt;What is Risc-V? &lt;a class=&quot;direct-link&quot; href=&quot;#what-is-risc-v%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;From UC Berkeley,2010
+&lt;ul&gt;
+&lt;li&gt;promote from
+&lt;ul&gt;
+&lt;li&gt;Krste Asanovic&lt;/li&gt;
+&lt;li&gt;Andrew&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The goal of risc-v
+&lt;ul&gt;
+&lt;li&gt;provide a ISA support embedded system to HPC&lt;/li&gt;
+&lt;li&gt;design a baseline ISA and some standard extension and some companies non-standard extension&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;risc-v-vector-extension%3F&quot;&gt;Risc-V Vector Extension? &lt;a class=&quot;direct-link&quot; href=&quot;#risc-v-vector-extension%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;start-from-an-example-vector-addition&quot;&gt;Start from an example &lt;code&gt;Vector Addition&lt;/code&gt; &lt;a class=&quot;direct-link&quot; href=&quot;#start-from-an-example-vector-addition&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;a twao array addition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;void add(int *a, int *b, int*c, int len)
+{
+for ()
+{
+    a[i] = b[i]+c[i]
+}
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;how-to-optimize-that%3F&quot;&gt;How to optimize that? &lt;a class=&quot;direct-link&quot; href=&quot;#how-to-optimize-that%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Software solution
+&lt;ul&gt;
+&lt;li&gt;Loop unrolling&lt;/li&gt;
+&lt;li&gt;Compilter optimization
+&lt;ul&gt;
+&lt;li&gt;gcc -O3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Micro-arch&lt;/li&gt;
+&lt;li&gt;加指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E5%8A%A0%E6%8C%87%E4%BB%A4%3A-simd&quot;&gt;加指令: SIMD &lt;a class=&quot;direct-link&quot; href=&quot;#%E5%8A%A0%E6%8C%87%E4%BB%A4%3A-simd&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Single Instuction Multiple Data&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一個指令可以處理多筆資料&lt;/li&gt;
+&lt;li&gt;許多架構會提供更大的暫存器來做操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ARM Neon&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VADD.I32 q1, q2, q3&lt;/li&gt;
+&lt;li&gt;4x 32 bit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;想看更多SIMD?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;看更多網路黑貓&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://champyen.blogspot.com/2017/01/simd-introduction.html&quot;&gt;https://champyen.blogspot.com/2017/01/simd-introduction.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;simd-%E7%9A%84%E6%87%89%E7%94%A8%E7%8B%80%E6%B3%81&quot;&gt;SIMD 的應用狀況 &lt;a class=&quot;direct-link&quot; href=&quot;#simd-%E7%9A%84%E6%87%89%E7%94%A8%E7%8B%80%E6%B3%81&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;迴圈處理倍數處理很麻煩
+&lt;ul&gt;
+&lt;li&gt;tail loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Memory Alignment: 沒對齊會變慢&lt;/li&gt;
+&lt;li&gt;需處理長度非指令集所支援的&lt;/li&gt;
+&lt;li&gt;可能會讓原本的程式長度變更長&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E7%B7%A8%E8%AD%AF%E5%99%A8%E6%98%AF%E6%88%91%E5%80%91%E7%9A%84%E6%95%91%E6%98%9F&quot;&gt;編譯器是我們的救星 &lt;a class=&quot;direct-link&quot; href=&quot;#%E7%B7%A8%E8%AD%AF%E5%99%A8%E6%98%AF%E6%88%91%E5%80%91%E7%9A%84%E6%95%91%E6%98%9F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;可以使用 GCC/LLVM 來協助處理&lt;/li&gt;
+&lt;li&gt;穿插工商 SiFIve的 LLVM compiler的職缺招募&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;riscv-vector-extension&quot;&gt;RiscV Vector Extension &lt;a class=&quot;direct-link&quot; href=&quot;#riscv-vector-extension&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;指令集層級解決SIMD遇到的問題&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No tail loop&lt;/li&gt;
+&lt;li&gt;solve memory alignment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SIMD 錯了嗎？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SIMD 指令集特性：長度固定&lt;/li&gt;
+&lt;li&gt;x86:
+&lt;ul&gt;
+&lt;li&gt;AVX(128-bits)&lt;/li&gt;
+&lt;li&gt;AVX2(256-bits)&lt;/li&gt;
+&lt;li&gt;AVX-512(512bits)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不同的opcode相同的運算，但...只有長度一樣&lt;/li&gt;
+&lt;li&gt;增加硬體的複雜度
+&lt;ul&gt;
+&lt;li&gt;同樣的東西要一直做/支援，也要相應的延展&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;舊有程式也無法運用新的指令集
+&lt;ul&gt;
+&lt;li&gt;例如舊的程式用AVX指令集寫，跑在支援AVX-512機器上但無法利用
+&lt;ul&gt;
+&lt;li&gt;程式可能過兩三年就要重新compile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Scalable) Vector Extension&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Risc-V Vector Extension提供可變長度而非固定長度的指令&lt;/li&gt;
+&lt;li&gt;用Vector Extention 寫的程式在新的Risc-V core 是無痛升級&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這個概念從1975 Cray-1就有類似設計理念&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;%E6%AD%A3%E7%89%87%E9%96%8B%E5%A7%8B%EF%BC%9Arisc-v-vector-extension&quot;&gt;正片開始：Risc-V Vector Extension &lt;a class=&quot;direct-link&quot; href=&quot;#%E6%AD%A3%E7%89%87%E9%96%8B%E5%A7%8B%EF%BC%9Arisc-v-vector-extension&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;提供32個可變長度的Vector Register
+&lt;ul&gt;
+&lt;li&gt;最短32bits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E6%8C%87%E4%BB%A4%E9%9B%86%E7%B0%A1%E4%BB%8B&quot;&gt;指令集簡介 &lt;a class=&quot;direct-link&quot; href=&quot;#%E6%8C%87%E4%BB%A4%E9%9B%86%E7%B0%A1%E4%BB%8B&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;理念&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最小化指令數量&lt;/li&gt;
+&lt;li&gt;彈性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;範例&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 x 32 bit int vector addition
+&lt;ul&gt;
+&lt;li&gt;vsetivli x0, 4, e32, m1&lt;/li&gt;
+&lt;li&gt;vadd.vv, v1, v2, v3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E4%BB%A5risc-v%E7%9A%84%E6%8C%87%E4%BB%A4%E9%9B%86-%E4%BE%86%E5%AF%A6%E4%BD%9C%E5%89%8D%E9%9D%A2%E7%9A%84array%E7%9B%B8%E5%8A%A0&quot;&gt;以Risc-V的指令集 來實作前面的array相加 &lt;a class=&quot;direct-link&quot; href=&quot;#%E4%BB%A5risc-v%E7%9A%84%E6%8C%87%E4%BB%A4%E9%9B%86-%E4%BE%86%E5%AF%A6%E4%BD%9C%E5%89%8D%E9%9D%A2%E7%9A%84array%E7%9B%B8%E5%8A%A0&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;%E8%88%87simd-%E6%AF%94%E8%BC%83&quot;&gt;與SIMD 比較 &lt;a class=&quot;direct-link&quot; href=&quot;#%E8%88%87simd-%E6%AF%94%E8%BC%83&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;不需處理tail loop&lt;/li&gt;
+&lt;li&gt;無痛升級
+&lt;ul&gt;
+&lt;li&gt;在同樣也是Risc-V新架構上跑，假如寬度有升級
+&lt;ul&gt;
+&lt;li&gt;程式不用改寫也不用compile，binary放上之後就能使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E6%8C%87%E4%BB%A4%E9%9B%86%E5%B0%8F%E7%B5%90&quot;&gt;指令集小結 &lt;a class=&quot;direct-link&quot; href=&quot;#%E6%8C%87%E4%BB%A4%E9%9B%86%E5%B0%8F%E7%B5%90&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;彈性的設計&lt;/li&gt;
+&lt;li&gt;軟體效能無痛升級&lt;/li&gt;
+&lt;li&gt;用不同的暫存器長度來透過一套指令集涵蓋各種目標市場
+&lt;ul&gt;
+&lt;li&gt;嵌入式：為了能耗，讓register寬度小&lt;/li&gt;
+&lt;li&gt;桌上型&lt;/li&gt;
+&lt;li&gt;Server: 讓register可以到很寬&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E7%BC%BA%E9%BB%9E&quot;&gt;缺點 &lt;a class=&quot;direct-link&quot; href=&quot;#%E7%BC%BA%E9%BB%9E&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;硬體與SIMD相比複雜許多&lt;/li&gt;
+&lt;li&gt;軟體撰寫與傳統SIMD不同，需要額外學習成本&lt;/li&gt;
+&lt;li&gt;目前軟體(Compiler/OS/Kernel)支援還在路上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;programming-model&quot;&gt;Programming Model &lt;a class=&quot;direct-link&quot; href=&quot;#programming-model&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;軟體要怎麼使用呢？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E8%BB%9F%E9%AB%94%E6%94%AF%E6%8F%B4&quot;&gt;軟體支援 &lt;a class=&quot;direct-link&quot; href=&quot;#%E8%BB%9F%E9%AB%94%E6%94%AF%E6%8F%B4&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;手排：使用intrinsic 以及Language Extention 撰寫&lt;/li&gt;
+&lt;li&gt;自排：自動向量化，你寫迴圈，compiler來幫你&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E6%89%8B%E6%8E%92%E7%AF%84%E4%BE%8B&quot;&gt;手排範例 &lt;a class=&quot;direct-link&quot; href=&quot;#%E6%89%8B%E6%8E%92%E7%AF%84%E4%BE%8B&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;過往：主流compiler 會提供語法extension&lt;/li&gt;
+&lt;li&gt;基於sifive 難用過往方式寫
+&lt;ul&gt;
+&lt;li&gt;本質上與SIMD不同，會需要引入些輔助函數
+&lt;ul&gt;
+&lt;li&gt;在c 引入 vsetvli_e32m1() 來查詢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;困擾
+&lt;ul&gt;
+&lt;li&gt;難讓使用者快速切入&lt;/li&gt;
+&lt;li&gt;C語言介面與assembly又有些落差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;與低階組合語言比起來多了型別與長度設定&lt;/li&gt;
+&lt;li&gt;利於編譯器最佳化跟code design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E8%87%AA%E6%8E%92%E5%8F%AF%E8%83%BD%E6%80%A7%E8%BF%BD%E6%B1%82&quot;&gt;自排可能性追求 &lt;a class=&quot;direct-link&quot; href=&quot;#%E8%87%AA%E6%8E%92%E5%8F%AF%E8%83%BD%E6%80%A7%E8%BF%BD%E6%B1%82&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;你寫迴圈，編譯器自動向量化&lt;/li&gt;
+&lt;li&gt;待發展&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%E5%85%B6%E4%BB%96%E5%8F%AF%E8%83%BD%EF%BC%9A%E6%B7%B7%E5%90%88%E5%BC%8F&quot;&gt;其他可能：混合式 &lt;a class=&quot;direct-link&quot; href=&quot;#%E5%85%B6%E4%BB%96%E5%8F%AF%E8%83%BD%EF%BC%9A%E6%B7%B7%E5%90%88%E5%BC%8F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenMP, OpenCL
+&lt;ul&gt;
+&lt;li&gt;讓用戶寫的比較矩陣的操作，也讓編譯器更好轉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;%E5%A4%A7%E7%B5%90&quot;&gt;大結 &lt;a class=&quot;direct-link&quot; href=&quot;#%E5%A4%A7%E7%B5%90&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Risc-V vector Extension 有彈性的設計與強大的運算能力&lt;/li&gt;
+&lt;li&gt;目前軟體則有多種選項且持續發展&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;%E5%B7%A5%E5%95%86&quot;&gt;工商 &lt;a class=&quot;direct-link&quot; href=&quot;#%E5%B7%A5%E5%95%86&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;如果你對上述的東西很有興趣？
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sifive.com/careers/5169976003/llvm-compiler-engineer-risc-vector-hsinchu-taiwan&quot;&gt;https://www.sifive.com/careers/5169976003/llvm-compiler-engineer-risc-vector-hsinchu-taiwan&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;q%26a&quot;&gt;Q&amp;amp;A &lt;a class=&quot;direct-link&quot; href=&quot;#q%26a&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;目前simulator&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;現在想找板子：平頭哥T1開發版(12塊美金)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kernel Context Switch 成本變這麼高&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這邊要讓效能變更好？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vector Extension&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;x86 20年&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可能程式跑在後面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;risc v 改善&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;會在risc v 程式上標記使用了什麼指令集&lt;/li&gt;
+&lt;li&gt;kernel 那要寫load來判斷，MIPS已經有開洞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Thead&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.t-head.cn/&quot;&gt;https://www.t-head.cn/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
 			
