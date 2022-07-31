@@ -8,7 +8,7 @@ layout: layouts/post.njk
 ---
 
 # 設計精簡又快速的 RISC-V 指令集模擬器 - Lambert Wu
-
+- This my first to attend COSCUP and this is my note about the talks from SiFive.
 - Speaker
     - Kito Cheng 
     - https://github.com/kito-cheng
