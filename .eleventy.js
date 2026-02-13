@@ -171,6 +171,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(GA_ID ? "js" : "js/*[!cached].*");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("_headers");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   // We need to rebuild upon JS change to update the CSP.
   eleventyConfig.addWatchTarget("./js/");
