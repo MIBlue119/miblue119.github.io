@@ -1,0 +1,30 @@
+export const SITE = {
+  website: "https://blog.latentspaces.io/",
+  author: "weirenlan",
+  profile: "https://github.com/miblue119",
+  desc: "Collections of notes about something - AI/ML, DevOps, and developer tools.",
+  title: "Weiren's Blog",
+  ogImage: "devosfera-og.webp",
+  lightAndDarkMode: true,
+  postPerIndex: 6,
+  postPerPage: 8,
+  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+  showArchives: true,
+  showGalleries: false,
+  showBackButton: true,
+  editPost: {
+    enabled: true,
+    text: "Edit this post",
+    url: "https://github.com/miblue119/miblue119.github.io/edit/main/",
+  },
+  dynamicOgImage: true,
+  dir: "ltr",
+  lang: "en",
+  timezone: "Asia/Taipei",
+  introAudio: {
+    enabled: false,
+    src: "/audio/intro-web.mp3",
+    label: "INTRO.MP3",
+    duration: 30,
+  },
+} as const;
