@@ -55,7 +55,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
         <p
           class="max-w-xs text-center text-xs leading-relaxed opacity-50 sm:text-start"
         >
-          Collections of notes about something.
+          Notes on speech AI, LLM agents, and agentic coding by {SITE.author}.
         </p>
       </div>
 
@@ -95,10 +95,7 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
     >
       <p class="font-cartograph text-[11px] tracking-wide opacity-35">
         &copy; {currentYear}
-        {SITE.title}. All rights reserved.
-      </p>
-      <p class="font-cartograph text-[11px] tracking-wide opacity-30">
-        Made with <span class="text-accent">&#9829;</span> and lots of coffee
+        {SITE.author}
       </p>
     </div>
   </div>

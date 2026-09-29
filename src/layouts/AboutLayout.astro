@@ -1,21 +1,25 @@
 ---
-import type { MarkdownLayoutProps } from "astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import Breadcrumb from "@/components/Breadcrumb.astro";
 import Layout from "./Layout.astro";
+import { Image } from "astro:assets";
 import { SITE } from "@/config";
+import avatar from "@/assets/images/weiren-lan.jpeg";
+import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
+import IconGitHub from "@/assets/icons/IconGitHub.svg";
 
-type Props = MarkdownLayoutProps<{ title: string }>;
+type Props = {
+  title?: string;
+  description?: string;
+};
 
-const { frontmatter } = Astro.props;
+const { title = SITE.title, description = SITE.desc } = Astro.props;
 ---
 
-<Layout title={`${frontmatter.title} | ${SITE.title}`}>
+<Layout title={title} description={description}>
   <Header />
-  <Breadcrumb />
-  <main id="main-content" class="app-layout">
-    <!-- Hero con aurora interactiva -->
+  <main id="main-content" data-layout="index" class="app-layout pt-6">
+    <!-- Hero with interactive aurora -->
     <div class="about-hero" data-about-hero>
       <div class="aurora-orb aurora-orb-1"></div>
       <div class="aurora-orb aurora-orb-2"></div>
@@ -25,27 +29,66 @@ const { frontmatter } = Astro.props;
         <div class="avatar-ring">
           <div class="avatar-glow"></div>
           <div class="avatar-inner">
-            <span class="avatar-emoji">👨‍💻</span>
+            <Image
+              src={avatar}
+              alt={SITE.author}
+              width={220}
+              height={220}
+              class="avatar-photo"
+              loading="eager"
+            />
           </div>
         </div>
         <h1 class="hero-title">
-          <span class="greeting">¡Hola! Soy</span>
+          <span class="greeting">Hi, I'm</span>
           <span class="name-glow">{SITE.author}</span>
         </h1>
+        <p class="hero-tagline">
+          AI Architect · Speech AI &amp; LLM Agents · Builder of ByeType
+        </p>
         <div class="hero-badges">
-          <span class="badge" data-badge>🚀 Developer</span>
-          <span class="badge" data-badge>📚 Estudiante</span>
-          <span class="badge" data-badge>🎮 Gamer</span>
+          <span class="badge" data-badge>Speech AI</span>
+          <span class="badge" data-badge>LLM Agents</span>
+          <span class="badge" data-badge>Enterprise AI</span>
+          <span class="badge" data-badge>Agentic Coding</span>
+        </div>
+        <div class="hero-links">
+          <a
+            class="hero-link hero-link--primary"
+            href={SITE.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconLinkedin class="size-4" /> LinkedIn
+          </a>
+          <a
+            class="hero-link"
+            href={SITE.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconGitHub class="size-4" /> GitHub
+          </a>
+          <a
+            class="hero-link"
+            href="https://byetype.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ByeType ↗
+          </a>
         </div>
       </div>
     </div>
 
     <section
       id="about"
-      class="about-content app-prose mb-28 max-w-app prose-img:border-0"
+      class="about-content app-prose mb-16 max-w-app prose-img:border-0"
     >
       <slot />
     </section>
+
+    <slot name="after" />
   </main>
   <Footer />
 </Layout>
@@ -234,8 +277,8 @@ const { frontmatter } = Astro.props;
   /* Avatar */
   .avatar-ring {
     position: relative;
-    width: 110px;
-    height: 110px;
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
     padding: 3px;
     background: conic-gradient(
@@ -246,7 +289,6 @@ const { frontmatter } = Astro.props;
       var(--color-border),
       var(--color-accent)
     );
-    animation: ring-spin 6s linear infinite;
   }
 
   @keyframes ring-spin {
@@ -291,12 +333,14 @@ const { frontmatter } = Astro.props;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: ring-spin 6s linear infinite reverse;
+    overflow: hidden;
   }
 
-  .avatar-emoji {
-    font-size: 2.8rem;
-    line-height: 1;
+  .avatar-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .hero-title {
@@ -396,6 +440,52 @@ const { frontmatter } = Astro.props;
 
   .badge:hover::before {
     opacity: 1;
+  }
+
+  .hero-tagline {
+    max-width: 32rem;
+    font-size: 0.95rem;
+    opacity: 0.75;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid color-mix(in srgb, var(--color-accent) 25%, transparent);
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
+  }
+
+  .hero-link:hover {
+    transform: translateY(-2px);
+    background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  }
+
+  .hero-link--primary {
+    background: var(--color-accent);
+    color: var(--color-background);
+    border-color: var(--color-accent);
+  }
+
+  .hero-link--primary:hover {
+    background: color-mix(
+      in srgb,
+      var(--color-accent) 85%,
+      var(--color-foreground)
+    );
   }
 
   /* Content styling */

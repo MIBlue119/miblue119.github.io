@@ -42,6 +42,19 @@ async function loadGoogleFonts(
       weight: 700,
       style: "normal",
     },
+    // Fallback for the Traditional Chinese post titles
+    {
+      name: "Noto Sans TC",
+      font: "Noto+Sans+TC",
+      weight: 400,
+      style: "normal",
+    },
+    {
+      name: "Noto Sans TC",
+      font: "Noto+Sans+TC",
+      weight: 700,
+      style: "normal",
+    },
   ];
 
   const fonts = await Promise.all(

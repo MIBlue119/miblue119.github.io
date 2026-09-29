@@ -59,7 +59,7 @@ export default async post => {
                     color: "#e2e8f0",
                     letterSpacing: "2px",
                   },
-                  children: SITE.title + ".com",
+                  children: new URL(SITE.website).hostname,
                 },
               },
             },
@@ -154,7 +154,10 @@ export default async post => {
       height: 630,
       embedFont: true,
       fonts: await loadGoogleFonts(
-        post.data.title + post.data.author + SITE.title + "Writtenby" + ".com"
+        post.data.title +
+          post.data.author +
+          new URL(SITE.website).hostname +
+          "Written by"
       ),
     }
   );
